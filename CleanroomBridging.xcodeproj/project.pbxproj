@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B08AED81B27E14B007A72CB /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */; };
+		3B08AEEE1B27E17C007A72CB /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B08AEE91B27E17C007A72CB /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B08AEEF1B27E17C007A72CB /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEEA1B27E17C007A72CB /* AssociatedObject.m */; };
+		3B08AEF01B27E17C007A72CB /* ExceptionTrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B08AEEB1B27E17C007A72CB /* ExceptionTrap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B08AEF11B27E17C007A72CB /* ExceptionTrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEEC1B27E17C007A72CB /* ExceptionTrap.m */; };
+		3B08AEF21B27E17C007A72CB /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEED1B27E17C007A72CB /* TargetAction.swift */; };
+		3B08AEF61B27E193007A72CB /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEF41B27E193007A72CB /* ExceptionTrapTests.swift */; };
+		3B08AEF71B27E193007A72CB /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEF51B27E193007A72CB /* TargetActionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B08AED91B27E14B007A72CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B08AEC31B27E14B007A72CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B08AECB1B27E14B007A72CB;
+			remoteInfo = CleanroomBridging;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B08AED71B27E14B007A72CB /* CleanroomBridgingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B08AEE91B27E17C007A72CB /* AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObject.h; sourceTree = "<group>"; };
+		3B08AEEA1B27E17C007A72CB /* AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObject.m; sourceTree = "<group>"; };
+		3B08AEEB1B27E17C007A72CB /* ExceptionTrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionTrap.h; sourceTree = "<group>"; };
+		3B08AEEC1B27E17C007A72CB /* ExceptionTrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionTrap.m; sourceTree = "<group>"; };
+		3B08AEED1B27E17C007A72CB /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
+		3B08AEF41B27E193007A72CB /* ExceptionTrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionTrapTests.swift; sourceTree = "<group>"; };
+		3B08AEF51B27E193007A72CB /* TargetActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B08AEC81B27E14B007A72CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B08AED41B27E14B007A72CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B08AED81B27E14B007A72CB /* CleanroomBridging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B08AEC21B27E14B007A72CB = {
+			isa = PBXGroup;
+			children = (
+				3B08AEE81B27E17C007A72CB /* Code */,
+				3B08AEF31B27E193007A72CB /* Tests */,
+				3B08AECD1B27E14B007A72CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B08AECD1B27E14B007A72CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */,
+				3B08AED71B27E14B007A72CB /* CleanroomBridgingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B08AEE81B27E17C007A72CB /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				3B08AEE91B27E17C007A72CB /* AssociatedObject.h */,
+				3B08AEEA1B27E17C007A72CB /* AssociatedObject.m */,
+				3B08AEEB1B27E17C007A72CB /* ExceptionTrap.h */,
+				3B08AEEC1B27E17C007A72CB /* ExceptionTrap.m */,
+				3B08AEED1B27E17C007A72CB /* TargetAction.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		3B08AEF31B27E193007A72CB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3B08AEF41B27E193007A72CB /* ExceptionTrapTests.swift */,
+				3B08AEF51B27E193007A72CB /* TargetActionTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B08AEC91B27E14B007A72CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B08AEEE1B27E17C007A72CB /* AssociatedObject.h in Headers */,
+				3B08AEF01B27E17C007A72CB /* ExceptionTrap.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B08AECB1B27E14B007A72CB /* CleanroomBridging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B08AEE21B27E14B007A72CB /* Build configuration list for PBXNativeTarget "CleanroomBridging" */;
+			buildPhases = (
+				3B08AEC71B27E14B007A72CB /* Sources */,
+				3B08AEC81B27E14B007A72CB /* Frameworks */,
+				3B08AEC91B27E14B007A72CB /* Headers */,
+				3B08AECA1B27E14B007A72CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanroomBridging;
+			productName = CleanroomBridging;
+			productReference = 3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3B08AED61B27E14B007A72CB /* CleanroomBridgingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B08AEE51B27E14B007A72CB /* Build configuration list for PBXNativeTarget "CleanroomBridgingTests" */;
+			buildPhases = (
+				3B08AED31B27E14B007A72CB /* Sources */,
+				3B08AED41B27E14B007A72CB /* Frameworks */,
+				3B08AED51B27E14B007A72CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B08AEDA1B27E14B007A72CB /* PBXTargetDependency */,
+			);
+			name = CleanroomBridgingTests;
+			productName = CleanroomBridgingTests;
+			productReference = 3B08AED71B27E14B007A72CB /* CleanroomBridgingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B08AEC31B27E14B007A72CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Gilt Groupe";
+				TargetAttributes = {
+					3B08AECB1B27E14B007A72CB = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					3B08AED61B27E14B007A72CB = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 3B08AEC61B27E14B007A72CB /* Build configuration list for PBXProject "CleanroomBridging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3B08AEC21B27E14B007A72CB;
+			productRefGroup = 3B08AECD1B27E14B007A72CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B08AECB1B27E14B007A72CB /* CleanroomBridging */,
+				3B08AED61B27E14B007A72CB /* CleanroomBridgingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B08AECA1B27E14B007A72CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B08AED51B27E14B007A72CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B08AEC71B27E14B007A72CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B08AEF11B27E17C007A72CB /* ExceptionTrap.m in Sources */,
+				3B08AEF21B27E17C007A72CB /* TargetAction.swift in Sources */,
+				3B08AEEF1B27E17C007A72CB /* AssociatedObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B08AED31B27E14B007A72CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B08AEF71B27E193007A72CB /* TargetActionTests.swift in Sources */,
+				3B08AEF61B27E193007A72CB /* ExceptionTrapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B08AEDA1B27E14B007A72CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B08AECB1B27E14B007A72CB /* CleanroomBridging */;
+			targetProxy = 3B08AED91B27E14B007A72CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B08AEE01B27E14B007A72CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B08AEE11B27E14B007A72CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B08AEE31B27E14B007A72CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BuildControl/Info-Framework.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BuildControl/Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		3B08AEE41B27E14B007A72CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BuildControl/Info-Framework.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BuildControl/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		3B08AEE61B27E14B007A72CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BuildControl/Info-Tests.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B08AEE71B27E14B007A72CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BuildControl/Info-Tests.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B08AEC61B27E14B007A72CB /* Build configuration list for PBXProject "CleanroomBridging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B08AEE01B27E14B007A72CB /* Debug */,
+				3B08AEE11B27E14B007A72CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B08AEE21B27E14B007A72CB /* Build configuration list for PBXNativeTarget "CleanroomBridging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B08AEE31B27E14B007A72CB /* Debug */,
+				3B08AEE41B27E14B007A72CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B08AEE51B27E14B007A72CB /* Build configuration list for PBXNativeTarget "CleanroomBridgingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B08AEE61B27E14B007A72CB /* Debug */,
+				3B08AEE71B27E14B007A72CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B08AEC31B27E14B007A72CB /* Project object */;
+}
