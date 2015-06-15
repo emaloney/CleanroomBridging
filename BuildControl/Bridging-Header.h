@@ -1,2 +1,2 @@
 #import <CleanroomBridging/AssociatedObject.h>
-#import <CleanroomBridging/ExceptionTrap.h>
+#import <CleanroomBridging/Exception.h>

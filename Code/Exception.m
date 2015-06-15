@@ -1,18 +1,18 @@
 //
-//  ExceptionTrap.m
+//  Exception.m
 //  Cleanroom Project
 //
 //  Created by Evan Maloney on 12/23/14.
 //  Copyright (c) 2014 Gilt Groupe. All rights reserved.
 //
 
-#import "ExceptionTrap.h"
+#import "Exception.h"
 
-@implementation ExceptionTrap
+@implementation Exception
 
-+ (BOOL) try:(nonnull ExceptionTrapTryBlock)tryBlock
-       catch:(nullable ExceptionTrapCatchBlock)catchBlock
-     finally:(nullable ExceptionTrapFinallyBlock)finallyBlock
++ (BOOL) doTry:(nonnull ExceptionTryBlock)tryBlock
+catchException:(nullable ExceptionCatchBlock)catchBlock
+       finally:(nullable ExceptionFinallyBlock)finallyBlock
 {
     BOOL succeeded = NO;
     @try {
@@ -32,25 +32,26 @@
     return succeeded;
 }
 
-+ (BOOL) try:(ExceptionTrapTryBlock)tryBlock
-       catch:(ExceptionTrapCatchBlock)catchBlock
++ (BOOL) doTry:(nonnull ExceptionTryBlock)tryBlock
+catchException:(nullable ExceptionCatchBlock)catchBlock
 {
-    return [self try:tryBlock catch:catchBlock finally:nil];
+    return [self doTry:tryBlock catchException:catchBlock finally:nil];
 }
 
-+ (BOOL) try:(ExceptionTrapTryBlock)tryBlock
-     finally:(ExceptionTrapFinallyBlock)finallyBlock
+
++ (BOOL) doTry:(nonnull ExceptionTryBlock)tryBlock
+       finally:(nullable ExceptionFinallyBlock)finallyBlock
 {
-    return [self try:tryBlock
-               catch:^(NSException* ex) {NSLog(@"%@ caught %@: %@\n%@", self, [ex class], ex.description, [ex.callStackSymbols componentsJoinedByString:@"\n"]);}
-             finally:finallyBlock];
+    return [self doTry:tryBlock
+        catchException:^(NSException* ex) {NSLog(@"%@ caught %@: %@\n%@", self, [ex class], ex.description, [ex.callStackSymbols componentsJoinedByString:@"\n"]);}
+               finally:finallyBlock];
 }
 
-+ (BOOL) try:(ExceptionTrapTryBlock)tryBlock
++ (BOOL) doTry:(nonnull ExceptionTryBlock)tryBlock
 {
-    return [self try:tryBlock
-               catch:^(NSException* ex) {NSLog(@"%@ caught %@: %@\n%@", self, [ex class], ex.description, [ex.callStackSymbols componentsJoinedByString:@"\n"]);}
-             finally:nil];
+    return [self doTry:tryBlock
+        catchException:^(NSException* ex) {NSLog(@"%@ caught %@: %@\n%@", self, [ex class], ex.description, [ex.callStackSymbols componentsJoinedByString:@"\n"]);}
+               finally:nil];
 }
 
 + (void) throwException:(nonnull NSException*)exception

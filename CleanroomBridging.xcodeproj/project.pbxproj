@@ -10,8 +10,8 @@
 		3B08AED81B27E14B007A72CB /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */; };
 		3B08AEEE1B27E17C007A72CB /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B08AEE91B27E17C007A72CB /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B08AEEF1B27E17C007A72CB /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEEA1B27E17C007A72CB /* AssociatedObject.m */; };
-		3B08AEF01B27E17C007A72CB /* ExceptionTrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B08AEEB1B27E17C007A72CB /* ExceptionTrap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B08AEF11B27E17C007A72CB /* ExceptionTrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEEC1B27E17C007A72CB /* ExceptionTrap.m */; };
+		3B08AEF01B27E17C007A72CB /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B08AEEB1B27E17C007A72CB /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B08AEF11B27E17C007A72CB /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEEC1B27E17C007A72CB /* Exception.m */; };
 		3B08AEF21B27E17C007A72CB /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEED1B27E17C007A72CB /* TargetAction.swift */; };
 		3B08AEF61B27E193007A72CB /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEF41B27E193007A72CB /* ExceptionTrapTests.swift */; };
 		3B08AEF71B27E193007A72CB /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEF51B27E193007A72CB /* TargetActionTests.swift */; };
@@ -32,8 +32,8 @@
 		3B08AED71B27E14B007A72CB /* CleanroomBridgingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B08AEE91B27E17C007A72CB /* AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObject.h; sourceTree = "<group>"; };
 		3B08AEEA1B27E17C007A72CB /* AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObject.m; sourceTree = "<group>"; };
-		3B08AEEB1B27E17C007A72CB /* ExceptionTrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionTrap.h; sourceTree = "<group>"; };
-		3B08AEEC1B27E17C007A72CB /* ExceptionTrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionTrap.m; sourceTree = "<group>"; };
+		3B08AEEB1B27E17C007A72CB /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		3B08AEEC1B27E17C007A72CB /* Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exception.m; sourceTree = "<group>"; };
 		3B08AEED1B27E17C007A72CB /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
 		3B08AEF41B27E193007A72CB /* ExceptionTrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionTrapTests.swift; sourceTree = "<group>"; };
 		3B08AEF51B27E193007A72CB /* TargetActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionTests.swift; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 			children = (
 				3B08AEE91B27E17C007A72CB /* AssociatedObject.h */,
 				3B08AEEA1B27E17C007A72CB /* AssociatedObject.m */,
-				3B08AEEB1B27E17C007A72CB /* ExceptionTrap.h */,
-				3B08AEEC1B27E17C007A72CB /* ExceptionTrap.m */,
+				3B08AEEB1B27E17C007A72CB /* Exception.h */,
+				3B08AEEC1B27E17C007A72CB /* Exception.m */,
 				3B08AEED1B27E17C007A72CB /* TargetAction.swift */,
 			);
 			path = Code;
@@ -105,7 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B08AEEE1B27E17C007A72CB /* AssociatedObject.h in Headers */,
-				3B08AEF01B27E17C007A72CB /* ExceptionTrap.h in Headers */,
+				3B08AEF01B27E17C007A72CB /* Exception.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,8 @@
 		3B08AEC31B27E14B007A72CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gilt Groupe";
 				TargetAttributes = {
 					3B08AECB1B27E14B007A72CB = {
@@ -205,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B08AEF11B27E17C007A72CB /* ExceptionTrap.m in Sources */,
+				3B08AEF11B27E17C007A72CB /* Exception.m in Sources */,
 				3B08AEF21B27E17C007A72CB /* TargetAction.swift in Sources */,
 				3B08AEEF1B27E17C007A72CB /* AssociatedObject.m in Sources */,
 			);
@@ -255,6 +256,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -336,6 +338,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "BuildControl/Bridging-Header.h";
@@ -354,6 +357,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "BuildControl/Bridging-Header.h";
@@ -363,16 +367,13 @@
 		3B08AEE61B27E14B007A72CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "BuildControl/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -380,12 +381,9 @@
 		3B08AEE71B27E14B007A72CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = "BuildControl/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -9,18 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
-typedef NS_ENUM(UInt16, AssociatedObjectStoragePolicy)
-{
-    AssociatedObjectStoragePolicyWeak   = OBJC_ASSOCIATION_ASSIGN,
-    AssociatedObjectStoragePolicyStrong = OBJC_ASSOCIATION_RETAIN_NONATOMIC,
-    AssociatedObjectStoragePolicyCopy   = OBJC_ASSOCIATION_COPY_NONATOMIC
-};
-
 @interface NSObject (CleanroomBaseAssociatedObject)
 
 - (void) setAssociatedObject:(nullable id)object
                       forKey:(nonnull const void*)key
-               storagePolicy:(AssociatedObjectStoragePolicy)policy;
+               storagePolicy:(objc_AssociationPolicy)policy;
 
 - (nullable id) associatedObjectForKey:(nonnull const void*)key;
 

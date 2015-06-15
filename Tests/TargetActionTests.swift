@@ -18,7 +18,7 @@ class TargetActionTests: XCTestCase
         let condition = NSCondition()
 
         let targetAction = TargetAction() {
-            println("Invoked!")
+            print("Invoked!")
 
             condition.lock()
             flag = true
@@ -26,7 +26,7 @@ class TargetActionTests: XCTestCase
             condition.unlock()
         }
 
-        let timer = NSTimer(fireDate: NSDate.distantFuture() as! NSDate, interval: 0.0, target: targetAction.target, selector: targetAction.action, userInfo: nil, repeats: false)
+        let timer = NSTimer(fireDate: NSDate.distantFuture(), interval: 0.0, target: targetAction.target, selector: targetAction.action, userInfo: nil, repeats: false)
 
         timer.fire()
 
@@ -44,7 +44,7 @@ class TargetActionTests: XCTestCase
         let userInfo = "(info for the user)"
 
         let targetAction = TargetAction() { (argument: AnyObject?) -> Void in
-            println("Invoked with: \(argument?.description)")
+            print("Invoked with: \(argument?.description)")
 
             let timer = argument as? NSTimer
             XCTAssertTrue(timer != nil)
@@ -56,7 +56,7 @@ class TargetActionTests: XCTestCase
             condition.unlock()
         }
 
-        let timer = NSTimer(fireDate: NSDate.distantFuture() as! NSDate, interval: 0.0, target: targetAction.target, selector: targetAction.action, userInfo: userInfo, repeats: false)
+        let timer = NSTimer(fireDate: NSDate.distantFuture(), interval: 0.0, target: targetAction.target, selector: targetAction.action, userInfo: userInfo, repeats: false)
 
         timer.fire()
 

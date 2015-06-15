@@ -12,7 +12,7 @@
 
 - (void) setAssociatedObject:(nullable id)object
                       forKey:(nonnull const void*)key
-               storagePolicy:(AssociatedObjectStoragePolicy)policy
+               storagePolicy:(objc_AssociationPolicy)policy
 {
     objc_setAssociatedObject(self, key, object, policy);
 }

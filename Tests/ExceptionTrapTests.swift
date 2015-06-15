@@ -1,5 +1,5 @@
 //
-//  ExceptionTrapTests.swift
+//  ExceptionTests.swift
 //  Cleanroom
 //
 //  Created by Evan Maloney on 1/2/15.
@@ -9,21 +9,21 @@
 import XCTest
 import CleanroomBridging
 
-class ExceptionTrapTests: XCTestCase
+class ExceptionTests: XCTestCase
 {
     func testTry()
     {
-        let shouldSucceed = ExceptionTrap.try {
+        let shouldSucceed = Exception.doTry {
             // some inocuous code that shouldn't throw an exception
             let constant = 50
-            var halfOfConstant = constant / 2
+            let halfOfConstant = constant / 2
             XCTAssertEqual(halfOfConstant, 25)
         }
         XCTAssert(shouldSucceed)
 
-        let shouldFail = ExceptionTrap.try({
+        let shouldFail = Exception.doTry({
             // throwing an exception should result in returning false
-            ExceptionTrap.throwExceptionWithName("It's full of fail!")
+            Exception.throwExceptionWithName("It's full of fail!")
         })
         XCTAssertFalse(shouldFail)
     }
@@ -31,29 +31,29 @@ class ExceptionTrapTests: XCTestCase
     func testTryCatch()
     {
         var didHitCatchBlock = false
-        let shouldSucceed = ExceptionTrap
-            .try({
+        let shouldSucceed = Exception
+            .doTry({
                 // some inocuous code that shouldn't throw an exception
                 let constant = 50
-                var halfOfConstant = constant / 2
+                let halfOfConstant = constant / 2
                 XCTAssertEqual(halfOfConstant, 25)
             },
-            catch: {ex in
-                println("Unexpected exception caught: \(ex))")
+            catchException: {ex in
+                print("Unexpected exception caught: \(ex))")
                 didHitCatchBlock = true
             }
         )
         XCTAssert(shouldSucceed)
         XCTAssertFalse(didHitCatchBlock)
 
-        let shouldFail = ExceptionTrap
-            .try({
+        let shouldFail = Exception
+            .doTry({
                 // throwing an exception should result in 
                 // hitting the catch block below & returning false
-                ExceptionTrap.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.")
+                Exception.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.")
             },
-            catch: {ex in
-                println("Exception caught (this was an expected failure and is safe to ignore): \(ex))")
+            catchException: {ex in
+                print("Exception caught (this was an expected failure and is safe to ignore): \(ex))")
                 didHitCatchBlock = true
             }
         )
@@ -64,11 +64,11 @@ class ExceptionTrapTests: XCTestCase
     func testTryFinally()
     {
         var didHitFinallyBlock = false
-        let shouldSucceed = ExceptionTrap
-            .try({
+        let shouldSucceed = Exception
+            .doTry({
                 // some inocuous code that shouldn't throw an exception
                 let constant = 50
-                var halfOfConstant = constant / 2
+                let halfOfConstant = constant / 2
                 XCTAssertEqual(halfOfConstant, 25)
             },
             finally: {
@@ -79,11 +79,11 @@ class ExceptionTrapTests: XCTestCase
         XCTAssert(didHitFinallyBlock)
 
         didHitFinallyBlock = false          // reset this variable
-        let shouldFail = ExceptionTrap
-            .try({
+        let shouldFail = Exception
+            .doTry({
                 // throwing an exception should result in
                 // hitting the catch block below & returning false
-                ExceptionTrap.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.", userInfo: ["info": "here is some info"])
+                Exception.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.", userInfo: ["info": "here is some info"])
             },
             finally: {
                 didHitFinallyBlock = true
@@ -97,15 +97,15 @@ class ExceptionTrapTests: XCTestCase
     {
         var didHitCatchBlock = false
         var didHitFinallyBlock = false
-        let shouldSucceed = ExceptionTrap
-            .try({
+        let shouldSucceed = Exception
+            .doTry({
                 // some inocuous code that shouldn't throw an exception
                 let constant = 50
-                var halfOfConstant = constant / 2
+                let halfOfConstant = constant / 2
                 XCTAssertEqual(halfOfConstant, 25)
             },
-            catch: {ex in
-                println("Unexpected exception caught: \(ex))")
+            catchException: {ex in
+                print("Unexpected exception caught: \(ex))")
                 didHitCatchBlock = true
             },
             finally: {
@@ -117,14 +117,14 @@ class ExceptionTrapTests: XCTestCase
         XCTAssert(didHitFinallyBlock)
 
         didHitFinallyBlock = false          // reset this variable
-        let shouldFail = ExceptionTrap
-            .try({
+        let shouldFail = Exception
+            .doTry({
                 // throwing an exception should result in
                 // hitting the catch block below & returning false
-                ExceptionTrap.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.", userInfo: ["info": "different info than before"])
+                Exception.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.", userInfo: ["info": "different info than before"])
             },
-            catch: {ex in
-                println("Exception caught (this was an expected failure and is safe to ignore): \(ex))")
+            catchException: {ex in
+                print("Exception caught (this was an expected failure and is safe to ignore): \(ex))")
                 XCTAssertNotNil(ex.reason)
                 XCTAssertEqual(ex.reason!, "I have my reasons.")
                 XCTAssertNotNil(ex.userInfo)
