@@ -28,6 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B06932B1B328DFE0040CDF3 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		3B06932D1B328DFE0040CDF3 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		3B06932E1B328DFE0040CDF3 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		3B06932F1B328DFE0040CDF3 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		3B0693301B328DFE0040CDF3 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		3B0693311B328DFE0040CDF3 /* Tests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		3B0693321B328DFE0040CDF3 /* Info-Framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Framework.plist"; sourceTree = "<group>"; };
+		3B0693331B328DFE0040CDF3 /* Info-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests.plist"; sourceTree = "<group>"; };
 		3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B08AED71B27E14B007A72CB /* CleanroomBridgingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B08AEE91B27E17C007A72CB /* AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObject.h; sourceTree = "<group>"; };
@@ -58,11 +66,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0693261B328DFE0040CDF3 /* BuildControl */ = {
+			isa = PBXGroup;
+			children = (
+				3B06932C1B328DFE0040CDF3 /* config */,
+				3B06932B1B328DFE0040CDF3 /* Bridging-Header.h */,
+				3B0693321B328DFE0040CDF3 /* Info-Framework.plist */,
+				3B0693331B328DFE0040CDF3 /* Info-Tests.plist */,
+			);
+			path = BuildControl;
+			sourceTree = "<group>";
+		};
+		3B06932C1B328DFE0040CDF3 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3B06932D1B328DFE0040CDF3 /* Debug.xcconfig */,
+				3B06932E1B328DFE0040CDF3 /* Framework.xcconfig */,
+				3B06932F1B328DFE0040CDF3 /* Project.xcconfig */,
+				3B0693301B328DFE0040CDF3 /* Release.xcconfig */,
+				3B0693311B328DFE0040CDF3 /* Tests.xcconfig */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
 		3B08AEC21B27E14B007A72CB = {
 			isa = PBXGroup;
 			children = (
 				3B08AEE81B27E17C007A72CB /* Code */,
 				3B08AEF31B27E193007A72CB /* Tests */,
+				3B0693261B328DFE0040CDF3 /* BuildControl */,
 				3B08AECD1B27E14B007A72CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -234,6 +266,7 @@
 /* Begin XCBuildConfiguration section */
 		3B08AEE01B27E14B007A72CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B06932F1B328DFE0040CDF3 /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -272,7 +305,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -285,6 +317,7 @@
 		};
 		3B08AEE11B27E14B007A72CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B06932F1B328DFE0040CDF3 /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -316,7 +349,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,50 +360,44 @@
 		};
 		3B08AEE31B27E14B007A72CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B06932D1B328DFE0040CDF3 /* Debug.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 4;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "BuildControl/Info-Framework.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BuildControl/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		3B08AEE41B27E14B007A72CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0693301B328DFE0040CDF3 /* Release.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 4;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "BuildControl/Info-Framework.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BuildControl/Bridging-Header.h";
 			};
 			name = Release;
 		};
 		3B08AEE61B27E14B007A72CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0693311B328DFE0040CDF3 /* Tests.xcconfig */;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BuildControl/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -380,8 +406,8 @@
 		};
 		3B08AEE71B27E14B007A72CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0693311B328DFE0040CDF3 /* Tests.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = "BuildControl/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
