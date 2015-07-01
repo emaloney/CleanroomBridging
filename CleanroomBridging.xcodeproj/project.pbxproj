@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0167F91B44783200E330CA /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B08AEE91B27E17C007A72CB /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B0167FA1B44783A00E330CA /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEEA1B27E17C007A72CB /* AssociatedObject.m */; };
+		3B0167FB1B44783D00E330CA /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B08AEEB1B27E17C007A72CB /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B0167FC1B44784500E330CA /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEEC1B27E17C007A72CB /* Exception.m */; };
+		3B0167FD1B44784900E330CA /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEED1B27E17C007A72CB /* TargetAction.swift */; };
 		3B08AED81B27E14B007A72CB /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */; };
 		3B08AEEE1B27E17C007A72CB /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B08AEE91B27E17C007A72CB /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B08AEEF1B27E17C007A72CB /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AEEA1B27E17C007A72CB /* AssociatedObject.m */; };
@@ -28,12 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B0167E21B44780200E330CA /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0167FE1B44791100E330CA /* Debug-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-iOS.xcconfig"; sourceTree = "<group>"; };
+		3B0167FF1B44791100E330CA /* Debug-OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-OSX.xcconfig"; sourceTree = "<group>"; };
+		3B0168001B44791100E330CA /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		3B0168011B44791100E330CA /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		3B0168021B44791100E330CA /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		3B0168031B44791100E330CA /* OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OSX.xcconfig; sourceTree = "<group>"; };
+		3B0168041B44791100E330CA /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		3B0168051B44791100E330CA /* Release-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release-iOS.xcconfig"; sourceTree = "<group>"; };
+		3B0168061B44791100E330CA /* Release-OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release-OSX.xcconfig"; sourceTree = "<group>"; };
+		3B0168071B44791100E330CA /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		3B0168081B44791100E330CA /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		3B06932B1B328DFE0040CDF3 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		3B06932D1B328DFE0040CDF3 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		3B06932E1B328DFE0040CDF3 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
-		3B06932F1B328DFE0040CDF3 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		3B0693301B328DFE0040CDF3 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		3B0693311B328DFE0040CDF3 /* Tests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		3B0693321B328DFE0040CDF3 /* Info-Framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Framework.plist"; sourceTree = "<group>"; };
 		3B0693331B328DFE0040CDF3 /* Info-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests.plist"; sourceTree = "<group>"; };
 		3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B0167DE1B44780200E330CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B08AEC81B27E14B007A72CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,11 +99,17 @@
 		3B06932C1B328DFE0040CDF3 /* config */ = {
 			isa = PBXGroup;
 			children = (
-				3B06932D1B328DFE0040CDF3 /* Debug.xcconfig */,
-				3B06932E1B328DFE0040CDF3 /* Framework.xcconfig */,
-				3B06932F1B328DFE0040CDF3 /* Project.xcconfig */,
-				3B0693301B328DFE0040CDF3 /* Release.xcconfig */,
-				3B0693311B328DFE0040CDF3 /* Tests.xcconfig */,
+				3B0167FE1B44791100E330CA /* Debug-iOS.xcconfig */,
+				3B0167FF1B44791100E330CA /* Debug-OSX.xcconfig */,
+				3B0168001B44791100E330CA /* Debug.xcconfig */,
+				3B0168011B44791100E330CA /* Framework.xcconfig */,
+				3B0168021B44791100E330CA /* iOS.xcconfig */,
+				3B0168031B44791100E330CA /* OSX.xcconfig */,
+				3B0168041B44791100E330CA /* Project.xcconfig */,
+				3B0168051B44791100E330CA /* Release-iOS.xcconfig */,
+				3B0168061B44791100E330CA /* Release-OSX.xcconfig */,
+				3B0168071B44791100E330CA /* Release.xcconfig */,
+				3B0168081B44791100E330CA /* Tests.xcconfig */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -104,6 +129,7 @@
 			children = (
 				3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */,
 				3B08AED71B27E14B007A72CB /* CleanroomBridgingTests.xctest */,
+				3B0167E21B44780200E330CA /* CleanroomBridging.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +158,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3B0167DF1B44780200E330CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0167FB1B44783D00E330CA /* Exception.h in Headers */,
+				3B0167F91B44783200E330CA /* AssociatedObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B08AEC91B27E14B007A72CB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,9 +179,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3B08AECB1B27E14B007A72CB /* CleanroomBridging */ = {
+		3B0167E11B44780200E330CA /* CleanroomBridging OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B08AEE21B27E14B007A72CB /* Build configuration list for PBXNativeTarget "CleanroomBridging" */;
+			buildConfigurationList = 3B0167F31B44780200E330CA /* Build configuration list for PBXNativeTarget "CleanroomBridging OSX" */;
+			buildPhases = (
+				3B0167DD1B44780200E330CA /* Sources */,
+				3B0167DE1B44780200E330CA /* Frameworks */,
+				3B0167DF1B44780200E330CA /* Headers */,
+				3B0167E01B44780200E330CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CleanroomBridging OSX";
+			productName = CleanroomBridging;
+			productReference = 3B0167E21B44780200E330CA /* CleanroomBridging.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3B08AECB1B27E14B007A72CB /* CleanroomBridging iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B08AEE21B27E14B007A72CB /* Build configuration list for PBXNativeTarget "CleanroomBridging iOS" */;
 			buildPhases = (
 				3B08AEC71B27E14B007A72CB /* Sources */,
 				3B08AEC81B27E14B007A72CB /* Frameworks */,
@@ -157,7 +210,7 @@
 			);
 			dependencies = (
 			);
-			name = CleanroomBridging;
+			name = "CleanroomBridging iOS";
 			productName = CleanroomBridging;
 			productReference = 3B08AECC1B27E14B007A72CB /* CleanroomBridging.framework */;
 			productType = "com.apple.product-type.framework";
@@ -190,6 +243,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gilt Groupe";
 				TargetAttributes = {
+					3B0167E11B44780200E330CA = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					3B08AECB1B27E14B007A72CB = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -210,13 +266,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B08AECB1B27E14B007A72CB /* CleanroomBridging */,
+				3B08AECB1B27E14B007A72CB /* CleanroomBridging iOS */,
+				3B0167E11B44780200E330CA /* CleanroomBridging OSX */,
 				3B08AED61B27E14B007A72CB /* CleanroomBridgingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B0167E01B44780200E330CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B08AECA1B27E14B007A72CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +298,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B0167DD1B44780200E330CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0167FA1B44783A00E330CA /* AssociatedObject.m in Sources */,
+				3B0167FD1B44784900E330CA /* TargetAction.swift in Sources */,
+				3B0167FC1B44784500E330CA /* Exception.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B08AEC71B27E14B007A72CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,15 +332,48 @@
 /* Begin PBXTargetDependency section */
 		3B08AEDA1B27E14B007A72CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B08AECB1B27E14B007A72CB /* CleanroomBridging */;
+			target = 3B08AECB1B27E14B007A72CB /* CleanroomBridging iOS */;
 			targetProxy = 3B08AED91B27E14B007A72CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3B0167F41B44780200E330CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0167FF1B44791100E330CA /* Debug-OSX.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gilt.cleanroom.CleanroomBridging;
+				PRODUCT_NAME = CleanroomBridging;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B0167F51B44780200E330CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0168061B44791100E330CA /* Release-OSX.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gilt.cleanroom.CleanroomBridging;
+				PRODUCT_NAME = CleanroomBridging;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		3B08AEE01B27E14B007A72CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B06932F1B328DFE0040CDF3 /* Project.xcconfig */;
+			baseConfigurationReference = 3B0168041B44791100E330CA /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -317,7 +424,7 @@
 		};
 		3B08AEE11B27E14B007A72CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B06932F1B328DFE0040CDF3 /* Project.xcconfig */;
+			baseConfigurationReference = 3B0168041B44791100E330CA /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -360,7 +467,7 @@
 		};
 		3B08AEE31B27E14B007A72CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B06932D1B328DFE0040CDF3 /* Debug.xcconfig */;
+			baseConfigurationReference = 3B0167FE1B44791100E330CA /* Debug-iOS.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -369,14 +476,14 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CleanroomBridging;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		3B08AEE41B27E14B007A72CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B0693301B328DFE0040CDF3 /* Release.xcconfig */;
+			baseConfigurationReference = 3B0168051B44791100E330CA /* Release-iOS.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -385,14 +492,14 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CleanroomBridging;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		3B08AEE61B27E14B007A72CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B0693311B328DFE0040CDF3 /* Tests.xcconfig */;
+			baseConfigurationReference = 3B0168081B44791100E330CA /* Tests.xcconfig */;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -406,7 +513,7 @@
 		};
 		3B08AEE71B27E14B007A72CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B0693311B328DFE0040CDF3 /* Tests.xcconfig */;
+			baseConfigurationReference = 3B0168081B44791100E330CA /* Tests.xcconfig */;
 			buildSettings = {
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.cleanroom.$(PRODUCT_NAME:rfc1034identifier)";
@@ -417,6 +524,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B0167F31B44780200E330CA /* Build configuration list for PBXNativeTarget "CleanroomBridging OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0167F41B44780200E330CA /* Debug */,
+				3B0167F51B44780200E330CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3B08AEC61B27E14B007A72CB /* Build configuration list for PBXProject "CleanroomBridging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -426,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B08AEE21B27E14B007A72CB /* Build configuration list for PBXNativeTarget "CleanroomBridging" */ = {
+		3B08AEE21B27E14B007A72CB /* Build configuration list for PBXNativeTarget "CleanroomBridging iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B08AEE31B27E14B007A72CB /* Debug */,

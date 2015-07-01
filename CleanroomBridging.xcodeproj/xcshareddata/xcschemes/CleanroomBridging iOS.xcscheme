@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3B08AECB1B27E14B007A72CB"
                BuildableName = "CleanroomBridging.framework"
-               BlueprintName = "CleanroomBridging"
+               BlueprintName = "CleanroomBridging iOS"
                ReferencedContainer = "container:CleanroomBridging.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -58,7 +58,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B08AECB1B27E14B007A72CB"
             BuildableName = "CleanroomBridging.framework"
-            BlueprintName = "CleanroomBridging"
+            BlueprintName = "CleanroomBridging iOS"
             ReferencedContainer = "container:CleanroomBridging.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,7 +80,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B08AECB1B27E14B007A72CB"
             BuildableName = "CleanroomBridging.framework"
-            BlueprintName = "CleanroomBridging"
+            BlueprintName = "CleanroomBridging iOS"
             ReferencedContainer = "container:CleanroomBridging.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -98,7 +98,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B08AECB1B27E14B007A72CB"
             BuildableName = "CleanroomBridging.framework"
-            BlueprintName = "CleanroomBridging"
+            BlueprintName = "CleanroomBridging iOS"
             ReferencedContainer = "container:CleanroomBridging.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
