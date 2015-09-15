@@ -1,3 +1,5 @@
+## Using CleanroomBridging
+
 ### TargetAction
 
 The `TargetAction` class allows you to use a Swift closure wherever a standard Cocoa target (`id`) and action (`SEL`) pair can be used.
