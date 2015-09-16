@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CleanroomBridging  Reference</title>
+    <title>CleanroomBridging.git  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -9,18 +9,18 @@
     <script src="js/jazzy.js" defer></script>
   </head>
   <body>
-    <a title="CleanroomBridging  Reference"></a>
+    <a title="CleanroomBridging.git  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CleanroomBridging Docs</a> (100% documented)</p>
+        <p><a href="index.html">CleanroomBridging.git Docs</a> (45% documented)</p>
         <p class="header-right"><a href="https://github.com/emaloney/CleanroomBridging.git"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="index.html">CleanroomBridging Reference</a>
+        <a href="index.html">CleanroomBridging.git Reference</a>
         <img id="carat" src="img/carat.png" />
-        CleanroomBridging  Reference
+        CleanroomBridging.git  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -29,6 +29,12 @@
           <li class="nav-group-name">
           <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/NotificationObjectWatcher.html">NotificationObjectWatcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NotificationWatcher.html">NotificationWatcher</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Classes/TargetAction.html">TargetAction</a>
               </li>
@@ -40,16 +46,48 @@
         <section>
           <section class="section">
             
-            <a href='#cleanroombridging' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='cleanroombridging'>CleanroomBridging</h1>
-<a href='#authors' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='authors'>Authors</h3>
+            <a href='#using_cleanroombridging' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='using_cleanroombridging'>Using CleanroomBridging</h2>
+<a href='#targetaction' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='targetaction'>TargetAction</h3>
 
-<p>Evan Maloney, Gilt Groupe</p>
+<p>The <code>TargetAction</code> class allows you to use a Swift closure wherever a standard Cocoa target (<code>id</code>) and action (<code>SEL</code>) pair can be used.</p>
+
+<p>The closure can take zero or one arguments, as is typical with the target/action paradigm.</p>
+<a href='#example_a_uibutton_action' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='example_a_uibutton_action'>Example: A UIButton action</h4>
+
+<p>You can use a <code>TargetAction</code> instance to set up <code>UIButton</code> action handler in conjunction with the <code>addTarget(_:, action:, forControlEvents:)</code> function declared as part of the <code>UIControl</code> superclass of <code>UIButton</code>:</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addActionHandlerForButton</span><span class="p">(</span><span class="nv">button</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">let</span> <span class="nv">handler</span> <span class="o">=</span> <span class="kt">TargetAction</span><span class="p">()</span> <span class="p">{</span> <span class="p">(</span><span class="nv">argument</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+        <span class="k">let</span> <span class="nv">button</span> <span class="o">=</span> <span class="n">argument</span> <span class="k">as?</span> <span class="kt">UIButton</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"Button tapped: </span><span class="se">\(</span><span class="n">button</span><span class="p">?</span><span class="o">.</span><span class="n">description</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="n">button</span><span class="o">.</span><span class="nf">addTarget</span><span class="p">(</span><span class="n">handler</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="n">handler</span><span class="o">.</span><span class="n">action</span><span class="p">,</span> <span class="nv">forControlEvents</span><span class="p">:</span> <span class="o">.</span><span class="kt">TouchUpInside</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The function above sets up a handler that will print out information about <code>button</code> when it is tapped.</p>
+
+<p>Note that the closure passed to the <code>TargetAction</code> constructor takes an argument. In the case of a <code>UIControl</code> target/action, the argument&rsquo;s value will be the control sending the action.</p>
+<a href='#example_an_nstimer_action' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='example_an_nstimer_action'>Example: An NSTimer action</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">clock</span> <span class="o">=</span> <span class="kt">TargetAction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"The time is now </span><span class="se">\(</span><span class="kt">NSDate</span><span class="p">()</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">timer</span> <span class="o">=</span> <span class="kt">NSTimer</span><span class="o">.</span><span class="nf">scheduledTimerWithTimeInterval</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span>
+                                           <span class="nv">target</span><span class="p">:</span> <span class="n">clock</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> 
+                                         <span class="nv">selector</span><span class="p">:</span> <span class="n">clock</span><span class="o">.</span><span class="n">action</span><span class="p">,</span>
+                                         <span class="nv">userInfo</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span>
+                                          <span class="nv">repeats</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+</code></pre>
+
+<p>The example above sets up a timer that will result in the current time being printed to the console every second.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>© 2014-2015 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a>. All rights reserved. (Last updated: 2015-07-01)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>© 2015 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.3.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

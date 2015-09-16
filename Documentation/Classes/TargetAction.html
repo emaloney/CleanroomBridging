@@ -13,13 +13,13 @@
     <a title="TargetAction Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CleanroomBridging Docs</a> (100% documented)</p>
+        <p><a href="../index.html">CleanroomBridging.git Docs</a> (45% documented)</p>
         <p class="header-right"><a href="https://github.com/emaloney/CleanroomBridging.git"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../index.html">CleanroomBridging Reference</a>
+        <a href="../index.html">CleanroomBridging.git Reference</a>
         <img id="carat" src="../img/carat.png" />
         TargetAction Class Reference
       </p>
@@ -31,6 +31,12 @@
           <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Classes/NotificationObjectWatcher.html">NotificationObjectWatcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NotificationWatcher.html">NotificationWatcher</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/TargetAction.html">TargetAction</a>
               </li>
             </ul>
@@ -41,6 +47,12 @@
         <section>
           <section class="section">
             <h1>TargetAction</h1>
+              <div class="declaration">
+                <div class="Swift">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TargetAction</span></code></pre>
+
+                </div>
+              </div>
             <p>The <code>TargetAction</code> class bridges the gap between Swift closures and the common
 Cocoa target (<code>id</code>)/action (<code>SEL</code>) paradigm. Construct a <code>TargetAction</code> with
 a no-argument or single-argument callback closure. Then, use the <code>target</code> and
@@ -71,7 +83,7 @@ anywhere Cocoa calls for a target/action.</p>
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">AnyObject</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="k">self</span> <span class="p">}</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">AnyObject</span> <span class="p">{</span> <span class="k">return</span> <span class="k">self</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -120,6 +132,10 @@ anywhere Cocoa calls for a target/action.</p>
                       <div class="abstract">
                         <p>Constructs a <code>TargetAction</code> with a no-argument callback.</p>
 
+<p>:param:     callback A callback closure that will be executed when the
+            target/action pair represented by the newly-constructed
+            instance is invoked.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -128,28 +144,6 @@ anywhere Cocoa calls for a target/action.</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">callback</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>callback</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A callback closure that will be executed when the
-target/action pair represented by the newly-constructed
-instance is invoked.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -169,6 +163,11 @@ instance is invoked.</p>
                       <div class="abstract">
                         <p>Constructs a <code>TargetAction</code> with a single-argument callback.</p>
 
+<p>:param:     callback A callback closure that will be executed when the
+            target/action pair represented by the newly-constructed instance
+            is invoked. The <code>AnyObject?</code> argument passed to <code>callback</code>
+            will be the argument sent to <code>action</code> when invoked.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -178,29 +177,6 @@ instance is invoked.</p>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>callback</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A callback closure that will be executed when the
-target/action pair represented by the newly-constructed instance
-is invoked. The <code>AnyObject?</code> argument passed to <code>callback</code>
-will be the argument sent to <code>action</code> when invoked.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </section>
                   </div>
                 </li>
@@ -209,8 +185,8 @@ will be the argument sent to <code>action</code> when invoked.</p>
           </section>
         </section>
         <section id="footer">
-          <p>© 2014-2015 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a>. All rights reserved. (Last updated: 2015-07-01)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>© 2015 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.3.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
