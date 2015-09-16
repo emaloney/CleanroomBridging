@@ -3,7 +3,7 @@
 //  Cleanroom Project
 //
 //  Created by Evan Maloney on 12/23/14.
-//  Copyright (c) 2014 Gilt Groupe. All rights reserved.
+//  Copyright © 2014 Gilt Groupe. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

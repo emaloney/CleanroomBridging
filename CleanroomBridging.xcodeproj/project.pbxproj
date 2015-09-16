@@ -36,6 +36,10 @@
 		3BFFEB9A1BAA14670042FFF5 /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */; };
 		3BFFEB9B1BAA14670042FFF5 /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */; };
 		3BFFEB9C1BAA14670042FFF5 /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */; };
+		3BFFEB9E1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */; };
+		3BFFEB9F1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */; };
+		3BFFEBA01BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */; };
+		3BFFEBA11BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +103,7 @@
 		3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
 		3BFFEB951BAA14670042FFF5 /* ExceptionTrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionTrapTests.swift; sourceTree = "<group>"; };
 		3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionTests.swift; sourceTree = "<group>"; };
+		3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationWatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +230,7 @@
 				3BFFEB771BAA140A0042FFF5 /* AssociatedObject.m */,
 				3BFFEB781BAA140A0042FFF5 /* Exception.h */,
 				3BFFEB791BAA140A0042FFF5 /* Exception.m */,
+				3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */,
 				3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */,
 			);
 			path = Code;
@@ -519,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFFEB801BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
+				3BFFEB9E1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
 				3BFFEB901BAA140A0042FFF5 /* TargetAction.swift in Sources */,
 				3BFFEB881BAA140A0042FFF5 /* Exception.m in Sources */,
 			);
@@ -538,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFFEB811BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
+				3BFFEB9F1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
 				3BFFEB911BAA140A0042FFF5 /* TargetAction.swift in Sources */,
 				3BFFEB891BAA140A0042FFF5 /* Exception.m in Sources */,
 			);
@@ -557,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFFEB821BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
+				3BFFEBA01BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
 				3BFFEB921BAA140A0042FFF5 /* TargetAction.swift in Sources */,
 				3BFFEB8A1BAA140A0042FFF5 /* Exception.m in Sources */,
 			);
@@ -576,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFFEB831BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
+				3BFFEBA11BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
 				3BFFEB931BAA140A0042FFF5 /* TargetAction.swift in Sources */,
 				3BFFEB8B1BAA140A0042FFF5 /* Exception.m in Sources */,
 			);

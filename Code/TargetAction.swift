@@ -3,7 +3,7 @@
 //  Cleanroom Project
 //
 //  Created by Evan Maloney on 3/31/15.
-//  Copyright (c) 2015 Gilt Groupe. All rights reserved.
+//  Copyright © 2015 Gilt Groupe. All rights reserved.
 //
 
 import Foundation
@@ -18,7 +18,7 @@ anywhere Cocoa calls for a target/action.
 public class TargetAction
 {
     /// The object to use as the *target* of a target/action pair.
-    public var target: AnyObject { get { return self } }
+    public var target: AnyObject { return self }
 
     /// The `Selector` to use as the *action* of the target/action pair.
     public var action: Selector {
