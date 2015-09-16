@@ -1,0 +1,7 @@
+NotificationWatcher.swift
+	public class NotificationWatcher
+	public init(notificationName: String, callback: (NSNotification) -> Void)
+	public func stopWatching()
+	public func resumeWatching()
+	public class NotificationObjectWatcher<T>: NotificationWatcher
+	public init(notificationName: String, callback: (NSNotification, T) -> Void)
