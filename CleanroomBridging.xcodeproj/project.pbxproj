@@ -10,6 +10,10 @@
 		3B00E5681BA3782D0011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E55D1BA3782D0011486D /* CleanroomBridging.framework */; };
 		3B00E5861BA379830011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E57C1BA379830011486D /* CleanroomBridging.framework */; };
 		3B00E5A41BA37A420011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E59A1BA37A420011486D /* CleanroomBridging.framework */; };
+		3B26C2441BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */; };
+		3B26C2451BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */; };
+		3B26C2461BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */; };
+		3B26C2471BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */; };
 		3BFFEB7C1BAA140A0042FFF5 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BFFEB7D1BAA140A0042FFF5 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BFFEB7E1BAA140A0042FFF5 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,6 +79,7 @@
 		3B00E5851BA379830011486D /* CleanroomBridgingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E59A1BA37A420011486D /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E5A31BA37A420011486D /* CleanroomBridgingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
 		3B38DBD01BA76428000986DF /* Debug-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-iOS.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD11BA76428000986DF /* Debug-OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-OSX.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD21BA76428000986DF /* Debug-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-tvOS.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +236,7 @@
 				3BFFEB781BAA140A0042FFF5 /* Exception.h */,
 				3BFFEB791BAA140A0042FFF5 /* Exception.m */,
 				3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */,
+				3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */,
 				3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */,
 			);
 			path = Code;
@@ -527,6 +533,7 @@
 				3BFFEB801BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
 				3BFFEB9E1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
 				3BFFEB901BAA140A0042FFF5 /* TargetAction.swift in Sources */,
+				3B26C2441BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */,
 				3BFFEB881BAA140A0042FFF5 /* Exception.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +554,7 @@
 				3BFFEB811BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
 				3BFFEB9F1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
 				3BFFEB911BAA140A0042FFF5 /* TargetAction.swift in Sources */,
+				3B26C2451BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */,
 				3BFFEB891BAA140A0042FFF5 /* Exception.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +575,7 @@
 				3BFFEB821BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
 				3BFFEBA01BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
 				3BFFEB921BAA140A0042FFF5 /* TargetAction.swift in Sources */,
+				3B26C2461BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */,
 				3BFFEB8A1BAA140A0042FFF5 /* Exception.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +596,7 @@
 				3BFFEB831BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
 				3BFFEBA11BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
 				3BFFEB931BAA140A0042FFF5 /* TargetAction.swift in Sources */,
+				3B26C2471BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */,
 				3BFFEB8B1BAA140A0042FFF5 /* Exception.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
