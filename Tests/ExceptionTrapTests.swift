@@ -130,7 +130,7 @@ class ExceptionTests: XCTestCase
                 XCTAssertNotNil(ex.userInfo)
                 XCTAssertNotNil(ex.userInfo!["info"])
                 XCTAssertNotNil(ex.userInfo!["info"] as? String)
-                XCTAssertEqual(ex.userInfo!["info"] as! String, "different info than before")
+                XCTAssertEqual(ex.userInfo!["info"] as? String, "different info than before")
                 didHitCatchBlock = true
             },
             finally: {

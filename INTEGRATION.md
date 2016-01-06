@@ -11,11 +11,13 @@ CleanroomBridging is built as a *Swift framework*, and as such, it has the follo
 Platform|Minimum OS version
 --------|------------------------
 Apple TV|tvOS 9.0
-
+Apple Watch|watchOS 2.0
 iPhone/iPad|iOS 8.0
 Mac|OS X 10.10
 
-CleanroomBridging is **Swift 2.0**-compliant and requires **Xcode 7.0 or higher** to be built.
+CleanroomBridging is **Swift 2.1 compliant** and therefore **requires Xcode 7.1 or higher** to compile.
+
+It is also known to work with Swift 2.1.1 in Xcode 7.2.
 
 ### Contents
 
@@ -27,7 +29,7 @@ CleanroomBridging is **Swift 2.0**-compliant and requires **Xcode 7.0 or higher*
 
 Some familiarity with the Terminal application, the bash command line, and the `git` command is assumed.
 
-The steps below have been tested with **git 2.3.8 (Apple Git-58)**, although they should be compatible with a wide range of git versions.
+The steps below have been tested with **git 2.5.4 (Apple Git-61)**, although they should be compatible with a wide range of recent git versions.
 
 
 ### Of Frameworks and Simulators
@@ -66,7 +68,7 @@ carthage version
 
 If Carthage is available, the version you have installed will be shown.
 
-> As of this writing, the current version of Carthage is 0.9.1.
+> As of this writing, the current version of Carthage is 0.11.
 
 If Carthage is not present, you will see an error that looks like:
 
@@ -114,7 +116,7 @@ To speed up the build process—and to avoid trying to build for a platform that
 To build for|Run the command
 --------|------------------------
 Apple TV|`carthage update --platform tvos`
-
+Apple Watch|`carthage update --platform watchos`
 iPhone/iPad|`carthage update --platform ios`
 Mac|`carthage update --platform mac`
 
@@ -157,7 +159,7 @@ At the top-left corner of the list of build phases, you will see a “`+`” ico
 Then, in the script editor area just below the *Shell* line, add the following text:
 
 ```
-$PROJECT_DIR/Carthage/Checkouts/CleanroomBridging/BuildControl/bin/stripCarthageFrameworks.sh
+"$PROJECT_DIR"/Carthage/Checkouts/CleanroomBridging/BuildControl/bin/stripCarthageFrameworks.sh
 ```
 
 This script will ensure that any frameworks built by Carthage are stripped of unnecessary processor architectures. Without this step, Apple would reject your app submission because the framework would be included as universal binaries, which [isn’t allowed in App Store submissions](http://www.openradar.me/radar?id=6409498411401216).
@@ -213,7 +215,7 @@ If you’re using some other form of version control of if you’re not using ve
 From within the `Libraries` directory, issue the following commands to download CleanroomBridging:
 
 ```bash
-git submodule add https://github.com/emaloney/CleanroomBridging.git
+git submodule add https://github.com/emaloney/CleanroomBridging
 git submodule update --init --recursive
 ```
 
@@ -226,7 +228,7 @@ Next, you’re ready to [embed the `CleanroomBridging.xcodeproj` project file in
 From within the `Libraries` directory, issue the following command to clone the CleanroomBridging repository:
 
 ```bash
-git clone https://github.com/emaloney/CleanroomBridging.git
+git clone https://github.com/emaloney/CleanroomBridging
 ```
 
 ### 2. Embed CleanroomBridging in your project
@@ -241,7 +243,7 @@ Before we can add `CleanroomBridging.framework` to your app, we have to build it
 
 **Important:** The next step will only work when the framework is built for a **device-based run destination**. That means that you must either select the “My Mac” or “iOS Device” run destination before building, or you must select an actual external device (an option that’s only available when such a device is connected to your development machine).
 
-Once a device-based run destination has been selected, select the appropriate build scheme for the target platform: “CleanroomBridging-iOS”, “CleanroomBridging-OSX” or “CleanroomBridging-tvOS”.
+Once a device-based run destination has been selected, select the appropriate build scheme for the target platform: “CleanroomBridging-iOS”, “CleanroomBridging-OSX”, “CleanroomBridging-tvOS” or “CleanroomBridging-watchOS”.
 
 Then, select *Build* (⌘B) from the *Product* menu.
 

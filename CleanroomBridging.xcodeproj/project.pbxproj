@@ -10,40 +10,40 @@
 		3B00E5681BA3782D0011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E55D1BA3782D0011486D /* CleanroomBridging.framework */; };
 		3B00E5861BA379830011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E57C1BA379830011486D /* CleanroomBridging.framework */; };
 		3B00E5A41BA37A420011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E59A1BA37A420011486D /* CleanroomBridging.framework */; };
-		3B26C2441BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */; };
-		3B26C2451BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */; };
-		3B26C2461BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */; };
-		3B26C2471BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */; };
-		3BFFEB7C1BAA140A0042FFF5 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFFEB7D1BAA140A0042FFF5 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFFEB7E1BAA140A0042FFF5 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFFEB7F1BAA140A0042FFF5 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFFEB801BAA140A0042FFF5 /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB771BAA140A0042FFF5 /* AssociatedObject.m */; };
-		3BFFEB811BAA140A0042FFF5 /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB771BAA140A0042FFF5 /* AssociatedObject.m */; };
-		3BFFEB821BAA140A0042FFF5 /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB771BAA140A0042FFF5 /* AssociatedObject.m */; };
-		3BFFEB831BAA140A0042FFF5 /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB771BAA140A0042FFF5 /* AssociatedObject.m */; };
-		3BFFEB841BAA140A0042FFF5 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB781BAA140A0042FFF5 /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFFEB851BAA140A0042FFF5 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB781BAA140A0042FFF5 /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFFEB861BAA140A0042FFF5 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB781BAA140A0042FFF5 /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFFEB871BAA140A0042FFF5 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFFEB781BAA140A0042FFF5 /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFFEB881BAA140A0042FFF5 /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB791BAA140A0042FFF5 /* Exception.m */; };
-		3BFFEB891BAA140A0042FFF5 /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB791BAA140A0042FFF5 /* Exception.m */; };
-		3BFFEB8A1BAA140A0042FFF5 /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB791BAA140A0042FFF5 /* Exception.m */; };
-		3BFFEB8B1BAA140A0042FFF5 /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB791BAA140A0042FFF5 /* Exception.m */; };
-		3BFFEB901BAA140A0042FFF5 /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */; };
-		3BFFEB911BAA140A0042FFF5 /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */; };
-		3BFFEB921BAA140A0042FFF5 /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */; };
-		3BFFEB931BAA140A0042FFF5 /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */; };
-		3BFFEB971BAA14670042FFF5 /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB951BAA14670042FFF5 /* ExceptionTrapTests.swift */; };
-		3BFFEB981BAA14670042FFF5 /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB951BAA14670042FFF5 /* ExceptionTrapTests.swift */; };
-		3BFFEB991BAA14670042FFF5 /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB951BAA14670042FFF5 /* ExceptionTrapTests.swift */; };
-		3BFFEB9A1BAA14670042FFF5 /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */; };
-		3BFFEB9B1BAA14670042FFF5 /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */; };
-		3BFFEB9C1BAA14670042FFF5 /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */; };
-		3BFFEB9E1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */; };
-		3BFFEB9F1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */; };
-		3BFFEBA01BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */; };
-		3BFFEBA11BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */; };
+		3B5A83531C3DBF0500BCE18A /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A83541C3DBF0500BCE18A /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A83551C3DBF0500BCE18A /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A83561C3DBF0500BCE18A /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A83571C3DBF0500BCE18A /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A834C1C3DBF0500BCE18A /* AssociatedObject.m */; };
+		3B5A83581C3DBF0500BCE18A /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A834C1C3DBF0500BCE18A /* AssociatedObject.m */; };
+		3B5A83591C3DBF0500BCE18A /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A834C1C3DBF0500BCE18A /* AssociatedObject.m */; };
+		3B5A835A1C3DBF0500BCE18A /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A834C1C3DBF0500BCE18A /* AssociatedObject.m */; };
+		3B5A835F1C3DBF0500BCE18A /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834E1C3DBF0500BCE18A /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A83601C3DBF0500BCE18A /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834E1C3DBF0500BCE18A /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A83611C3DBF0500BCE18A /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834E1C3DBF0500BCE18A /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A83621C3DBF0500BCE18A /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834E1C3DBF0500BCE18A /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A83631C3DBF0500BCE18A /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A834F1C3DBF0500BCE18A /* Exception.m */; };
+		3B5A83641C3DBF0500BCE18A /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A834F1C3DBF0500BCE18A /* Exception.m */; };
+		3B5A83651C3DBF0500BCE18A /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A834F1C3DBF0500BCE18A /* Exception.m */; };
+		3B5A83661C3DBF0500BCE18A /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A834F1C3DBF0500BCE18A /* Exception.m */; };
+		3B5A83671C3DBF0500BCE18A /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83501C3DBF0500BCE18A /* NotificationWatcher.swift */; };
+		3B5A83681C3DBF0500BCE18A /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83501C3DBF0500BCE18A /* NotificationWatcher.swift */; };
+		3B5A83691C3DBF0500BCE18A /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83501C3DBF0500BCE18A /* NotificationWatcher.swift */; };
+		3B5A836A1C3DBF0500BCE18A /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83501C3DBF0500BCE18A /* NotificationWatcher.swift */; };
+		3B5A836B1C3DBF0500BCE18A /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83511C3DBF0500BCE18A /* NSTimerExtension.swift */; };
+		3B5A836C1C3DBF0500BCE18A /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83511C3DBF0500BCE18A /* NSTimerExtension.swift */; };
+		3B5A836D1C3DBF0500BCE18A /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83511C3DBF0500BCE18A /* NSTimerExtension.swift */; };
+		3B5A836E1C3DBF0500BCE18A /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83511C3DBF0500BCE18A /* NSTimerExtension.swift */; };
+		3B5A836F1C3DBF0500BCE18A /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83521C3DBF0500BCE18A /* TargetAction.swift */; };
+		3B5A83701C3DBF0500BCE18A /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83521C3DBF0500BCE18A /* TargetAction.swift */; };
+		3B5A83711C3DBF0500BCE18A /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83521C3DBF0500BCE18A /* TargetAction.swift */; };
+		3B5A83721C3DBF0500BCE18A /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83521C3DBF0500BCE18A /* TargetAction.swift */; };
+		3B5A83851C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83831C3DC10100BCE18A /* ExceptionTrapTests.swift */; };
+		3B5A83861C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83831C3DC10100BCE18A /* ExceptionTrapTests.swift */; };
+		3B5A83871C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83831C3DC10100BCE18A /* ExceptionTrapTests.swift */; };
+		3B5A83881C3DC10100BCE18A /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83841C3DC10100BCE18A /* TargetActionTests.swift */; };
+		3B5A83891C3DC10100BCE18A /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83841C3DC10100BCE18A /* TargetActionTests.swift */; };
+		3B5A838A1C3DC10100BCE18A /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A83841C3DC10100BCE18A /* TargetActionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,6 @@
 		3B00E5851BA379830011486D /* CleanroomBridgingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E59A1BA37A420011486D /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E5A31BA37A420011486D /* CleanroomBridgingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
 		3B38DBD01BA76428000986DF /* Debug-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-iOS.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD11BA76428000986DF /* Debug-OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-OSX.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD21BA76428000986DF /* Debug-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-tvOS.xcconfig"; sourceTree = "<group>"; };
@@ -100,15 +99,16 @@
 		3B38DBE11BA76428000986DF /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		3B38DBE21BA76428000986DF /* tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
 		3B38DBE31BA76428000986DF /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
+		3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObject.h; sourceTree = "<group>"; };
+		3B5A834C1C3DBF0500BCE18A /* AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObject.m; sourceTree = "<group>"; };
+		3B5A834E1C3DBF0500BCE18A /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		3B5A834F1C3DBF0500BCE18A /* Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exception.m; sourceTree = "<group>"; };
+		3B5A83501C3DBF0500BCE18A /* NotificationWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationWatcher.swift; sourceTree = "<group>"; };
+		3B5A83511C3DBF0500BCE18A /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
+		3B5A83521C3DBF0500BCE18A /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
+		3B5A83831C3DC10100BCE18A /* ExceptionTrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionTrapTests.swift; sourceTree = "<group>"; };
+		3B5A83841C3DC10100BCE18A /* TargetActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionTests.swift; sourceTree = "<group>"; };
 		3B78C6CE1BA7634E00173EAC /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObject.h; sourceTree = "<group>"; };
-		3BFFEB771BAA140A0042FFF5 /* AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObject.m; sourceTree = "<group>"; };
-		3BFFEB781BAA140A0042FFF5 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
-		3BFFEB791BAA140A0042FFF5 /* Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exception.m; sourceTree = "<group>"; };
-		3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
-		3BFFEB951BAA14670042FFF5 /* ExceptionTrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionTrapTests.swift; sourceTree = "<group>"; };
-		3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionTests.swift; sourceTree = "<group>"; };
-		3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationWatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +204,29 @@
 			path = config;
 			sourceTree = "<group>";
 		};
+		3B00E4D21BA36B840011486D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */,
+				3B5A834C1C3DBF0500BCE18A /* AssociatedObject.m */,
+				3B5A834E1C3DBF0500BCE18A /* Exception.h */,
+				3B5A834F1C3DBF0500BCE18A /* Exception.m */,
+				3B5A83501C3DBF0500BCE18A /* NotificationWatcher.swift */,
+				3B5A83511C3DBF0500BCE18A /* NSTimerExtension.swift */,
+				3B5A83521C3DBF0500BCE18A /* TargetAction.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3B00E4D51BA36B840011486D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3B5A83831C3DC10100BCE18A /* ExceptionTrapTests.swift */,
+				3B5A83841C3DC10100BCE18A /* TargetActionTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		3B00E55E1BA3782D0011486D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,34 +244,11 @@
 		3BCBACE11BA369AD007F1C90 = {
 			isa = PBXGroup;
 			children = (
-				3BFFEB751BAA140A0042FFF5 /* Code */,
-				3BFFEB941BAA14670042FFF5 /* Tests */,
+				3B00E4D21BA36B840011486D /* Sources */,
+				3B00E4D51BA36B840011486D /* Tests */,
 				3B00E4B91BA36B840011486D /* BuildControl */,
 				3B00E55E1BA3782D0011486D /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		3BFFEB751BAA140A0042FFF5 /* Code */ = {
-			isa = PBXGroup;
-			children = (
-				3BFFEB761BAA140A0042FFF5 /* AssociatedObject.h */,
-				3BFFEB771BAA140A0042FFF5 /* AssociatedObject.m */,
-				3BFFEB781BAA140A0042FFF5 /* Exception.h */,
-				3BFFEB791BAA140A0042FFF5 /* Exception.m */,
-				3BFFEB9D1BAA156B0042FFF5 /* NotificationWatcher.swift */,
-				3B26C2431BFD2A030026F0A6 /* NSTimerExtension.swift */,
-				3BFFEB7B1BAA140A0042FFF5 /* TargetAction.swift */,
-			);
-			path = Code;
-			sourceTree = "<group>";
-		};
-		3BFFEB941BAA14670042FFF5 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3BFFEB951BAA14670042FFF5 /* ExceptionTrapTests.swift */,
-				3BFFEB961BAA14670042FFF5 /* TargetActionTests.swift */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +258,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB841BAA140A0042FFF5 /* Exception.h in Headers */,
-				3BFFEB7C1BAA140A0042FFF5 /* AssociatedObject.h in Headers */,
+				3B5A835F1C3DBF0500BCE18A /* Exception.h in Headers */,
+				3B5A83531C3DBF0500BCE18A /* AssociatedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +267,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB851BAA140A0042FFF5 /* Exception.h in Headers */,
-				3BFFEB7D1BAA140A0042FFF5 /* AssociatedObject.h in Headers */,
+				3B5A83601C3DBF0500BCE18A /* Exception.h in Headers */,
+				3B5A83541C3DBF0500BCE18A /* AssociatedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +276,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB861BAA140A0042FFF5 /* Exception.h in Headers */,
-				3BFFEB7E1BAA140A0042FFF5 /* AssociatedObject.h in Headers */,
+				3B5A83611C3DBF0500BCE18A /* Exception.h in Headers */,
+				3B5A83551C3DBF0500BCE18A /* AssociatedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +285,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB871BAA140A0042FFF5 /* Exception.h in Headers */,
-				3BFFEB7F1BAA140A0042FFF5 /* AssociatedObject.h in Headers */,
+				3B5A83621C3DBF0500BCE18A /* Exception.h in Headers */,
+				3B5A83561C3DBF0500BCE18A /* AssociatedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +425,7 @@
 		3BCBACE21BA369AD007F1C90 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				TargetAttributes = {
 					3B00E55C1BA3782D0011486D = {
@@ -530,11 +531,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB801BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
-				3BFFEB9E1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
-				3BFFEB901BAA140A0042FFF5 /* TargetAction.swift in Sources */,
-				3B26C2441BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */,
-				3BFFEB881BAA140A0042FFF5 /* Exception.m in Sources */,
+				3B5A83671C3DBF0500BCE18A /* NotificationWatcher.swift in Sources */,
+				3B5A83631C3DBF0500BCE18A /* Exception.m in Sources */,
+				3B5A836B1C3DBF0500BCE18A /* NSTimerExtension.swift in Sources */,
+				3B5A836F1C3DBF0500BCE18A /* TargetAction.swift in Sources */,
+				3B5A83571C3DBF0500BCE18A /* AssociatedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,8 +543,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB9A1BAA14670042FFF5 /* TargetActionTests.swift in Sources */,
-				3BFFEB971BAA14670042FFF5 /* ExceptionTrapTests.swift in Sources */,
+				3B5A83851C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */,
+				3B5A83881C3DC10100BCE18A /* TargetActionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,11 +552,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB811BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
-				3BFFEB9F1BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
-				3BFFEB911BAA140A0042FFF5 /* TargetAction.swift in Sources */,
-				3B26C2451BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */,
-				3BFFEB891BAA140A0042FFF5 /* Exception.m in Sources */,
+				3B5A83681C3DBF0500BCE18A /* NotificationWatcher.swift in Sources */,
+				3B5A83641C3DBF0500BCE18A /* Exception.m in Sources */,
+				3B5A836C1C3DBF0500BCE18A /* NSTimerExtension.swift in Sources */,
+				3B5A83701C3DBF0500BCE18A /* TargetAction.swift in Sources */,
+				3B5A83581C3DBF0500BCE18A /* AssociatedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,8 +564,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB9B1BAA14670042FFF5 /* TargetActionTests.swift in Sources */,
-				3BFFEB981BAA14670042FFF5 /* ExceptionTrapTests.swift in Sources */,
+				3B5A83861C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */,
+				3B5A83891C3DC10100BCE18A /* TargetActionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,11 +573,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB821BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
-				3BFFEBA01BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
-				3BFFEB921BAA140A0042FFF5 /* TargetAction.swift in Sources */,
-				3B26C2461BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */,
-				3BFFEB8A1BAA140A0042FFF5 /* Exception.m in Sources */,
+				3B5A83691C3DBF0500BCE18A /* NotificationWatcher.swift in Sources */,
+				3B5A83651C3DBF0500BCE18A /* Exception.m in Sources */,
+				3B5A836D1C3DBF0500BCE18A /* NSTimerExtension.swift in Sources */,
+				3B5A83711C3DBF0500BCE18A /* TargetAction.swift in Sources */,
+				3B5A83591C3DBF0500BCE18A /* AssociatedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,8 +585,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB9C1BAA14670042FFF5 /* TargetActionTests.swift in Sources */,
-				3BFFEB991BAA14670042FFF5 /* ExceptionTrapTests.swift in Sources */,
+				3B5A83871C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */,
+				3B5A838A1C3DC10100BCE18A /* TargetActionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +594,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEB831BAA140A0042FFF5 /* AssociatedObject.m in Sources */,
-				3BFFEBA11BAA156B0042FFF5 /* NotificationWatcher.swift in Sources */,
-				3BFFEB931BAA140A0042FFF5 /* TargetAction.swift in Sources */,
-				3B26C2471BFD2A030026F0A6 /* NSTimerExtension.swift in Sources */,
-				3BFFEB8B1BAA140A0042FFF5 /* Exception.m in Sources */,
+				3B5A836A1C3DBF0500BCE18A /* NotificationWatcher.swift in Sources */,
+				3B5A83661C3DBF0500BCE18A /* Exception.m in Sources */,
+				3B5A836E1C3DBF0500BCE18A /* NSTimerExtension.swift in Sources */,
+				3B5A83721C3DBF0500BCE18A /* TargetAction.swift in Sources */,
+				3B5A835A1C3DBF0500BCE18A /* AssociatedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,6 +839,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -986,7 +988,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1010,6 +1012,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1035,7 +1038,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1181,6 +1184,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1234,7 +1238,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 3;
 			};
 			name = Debug;
 		};
@@ -1242,7 +1245,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 3;
 			};
 			name = Release;
 		};
