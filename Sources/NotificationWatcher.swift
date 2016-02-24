@@ -12,9 +12,9 @@ public class NotificationWatcher
 {
     private let receiver: NotificationReceiver
     
-    public init(notificationName: String, callback: (NSNotification) -> Void)
+    public init(notificationName: String, object: AnyObject? = nil, callback: (NSNotification) -> Void)
     {
-        self.receiver = NotificationReceiver(notificationName: notificationName) { notif in
+        self.receiver = NotificationReceiver(notificationName: notificationName, object: object) { notif in
             callback(notif)
         }
     }
@@ -32,15 +32,12 @@ public class NotificationWatcher
 
 public class NotificationObjectWatcher<T>: NotificationWatcher
 {
-    public init(notificationName: String, callback: (NSNotification, T) -> Void)
+    public init(notificationName: String, object: AnyObject? = nil, callback: (NSNotification, T) -> Void)
     {
-        super.init(notificationName: notificationName, callback: { notif in
+        super.init(notificationName: notificationName, object: object, callback: { notif in
             if let typedObj = notif.object as? T {
                 callback(notif, typedObj)
             }
-//            else {
-//                Log.error?.message("Unexpected notification object type for \(notificationName)")
-//            }
         })
     }
 }
@@ -49,13 +46,15 @@ private class NotificationReceiver
 {
     let callback: (NSNotification) -> Void
     let notificationName: String
+    let object: AnyObject?
     var isObserving = false
     
-    init(notificationName: String, callback: (NSNotification) -> Void)
+    init(notificationName: String, object: AnyObject? = nil, callback: (NSNotification) -> Void)
     {
         self.notificationName = notificationName
+        self.object = object
         self.callback = callback
-        
+
         startObserving()
     }
     
@@ -71,8 +70,7 @@ private class NotificationReceiver
     func startObserving()
     {
         if !isObserving {
-            
-            NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("notificationReceived:"), name: notificationName, object: nil)
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("notificationReceived:"), name: notificationName, object: object)
             isObserving = true
         }
     }
