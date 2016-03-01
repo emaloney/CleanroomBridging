@@ -24,9 +24,9 @@ public class TargetAction
     public var action: Selector {
         get {
             if noArgCallback != nil {
-                return Selector("noArgAction")
+                return #selector(TargetAction.noArgAction)
             } else {
-                return Selector("singleArgAction:")
+                return #selector(TargetAction.singleArgAction(_:))
             }
         }
     }
