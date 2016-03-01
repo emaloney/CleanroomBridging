@@ -14,7 +14,7 @@
     <a title="TargetAction Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CleanroomBridging Docs</a> (29% documented)</p>
+        <p><a href="../index.html">CleanroomBridging Docs</a> (31% documented)</p>
         <p class="header-right"><a href="https://github.com/emaloney/CleanroomBridging"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -50,14 +50,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Protocols.html">Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Protocols.html#/s:P17CleanroomBridging17CleanroomBridging">CleanroomBridging</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -73,7 +65,7 @@
             <p>The <code>TargetAction</code> class bridges the gap between Swift closures and the common
 Cocoa target (<code>id</code>)/action (<code>SEL</code>) paradigm. Construct a <code>TargetAction</code> with
 a no-argument or single-argument callback closure. Then, use the <code>target</code> and
-<code>action</code> properties of the <code>TargetAction</code> instance as you would normally 
+<code>action</code> properties of the <code>TargetAction</code> instance as you would normally
 anywhere Cocoa calls for a target/action.</p>
 
           </section>
@@ -83,9 +75,9 @@ anywhere Cocoa calls for a target/action.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC17CleanroomBridging12TargetAction6targetPSs9AnyObject_"></a>
+                    <a name="/s:vC17CleanroomBridging12TargetAction6targetPs9AnyObject_"></a>
                     <a name="//apple_ref/swift/Property/target" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC17CleanroomBridging12TargetAction6targetPSs9AnyObject_">target</a>
+                    <a class="token" href="#/s:vC17CleanroomBridging12TargetAction6targetPs9AnyObject_">target</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -137,9 +129,9 @@ anywhere Cocoa calls for a target/action.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17CleanroomBridging12TargetActioncFMS0_FT8callbackFT_T__S0_"></a>
+                    <a name="/s:FC17CleanroomBridging12TargetActioncFT8callbackFT_T__S0_"></a>
                     <a name="//apple_ref/swift/Method/init(callback:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17CleanroomBridging12TargetActioncFMS0_FT8callbackFT_T__S0_">init(callback:)</a>
+                    <a class="token" href="#/s:FC17CleanroomBridging12TargetActioncFT8callbackFT_T__S0_">init(callback:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -148,10 +140,6 @@ anywhere Cocoa calls for a target/action.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Constructs a <code><a href="../Classes/TargetAction.html">TargetAction</a></code> with a no-argument callback.</p>
-
-<p>:param:     callback A callback closure that will be executed when the
-            target/action pair represented by the newly-constructed
-            instance is invoked.</p>
 
                       </div>
                       <div class="declaration">
@@ -162,15 +150,35 @@ anywhere Cocoa calls for a target/action.</p>
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A callback closure that will be executed when the target/action pair represented by the newly-constructed instance is invoked.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17CleanroomBridging12TargetActioncFMS0_FT8callbackFGSqPSs9AnyObject__T__S0_"></a>
+                    <a name="/s:FC17CleanroomBridging12TargetActioncFT8callbackFGSqPs9AnyObject__T__S0_"></a>
                     <a name="//apple_ref/swift/Method/init(callback:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17CleanroomBridging12TargetActioncFMS0_FT8callbackFGSqPSs9AnyObject__T__S0_">init(callback:)</a>
+                    <a class="token" href="#/s:FC17CleanroomBridging12TargetActioncFT8callbackFGSqPs9AnyObject__T__S0_">init(callback:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -180,11 +188,6 @@ anywhere Cocoa calls for a target/action.</p>
                       <div class="abstract">
                         <p>Constructs a <code><a href="../Classes/TargetAction.html">TargetAction</a></code> with a single-argument callback.</p>
 
-<p>:param:     callback A callback closure that will be executed when the
-            target/action pair represented by the newly-constructed instance
-            is invoked. The <code>AnyObject?</code> argument passed to <code>callback</code>
-            will be the argument sent to <code><a href="../Classes/TargetAction.html#/s:vC17CleanroomBridging12TargetAction6actionV10ObjectiveC8Selector">action</a></code> when invoked.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -193,6 +196,26 @@ anywhere Cocoa calls for a target/action.</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">callback</span><span class="p">:</span> <span class="p">(</span><span class="kt">AnyObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A callback closure that will be executed when the target/action pair represented by the newly-constructed instance is invoked. The <code>AnyObject?</code> argument passed to <code>callback</code> will be the argument sent to <code>action</code> when invoked.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

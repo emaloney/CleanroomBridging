@@ -1,12 +1,10 @@
-CleanroomBridging.swift
-	public protocol CleanroomBridging
 NotificationWatcher.swift
 	public class NotificationWatcher
-	public init(notificationName: String, callback: (NSNotification) -> Void)
+	public init(notificationName: String, object: AnyObject? = nil, callback: (NSNotification) -> Void)
 	public func stopWatching()
 	public func resumeWatching()
 	public class NotificationObjectWatcher<T>: NotificationWatcher
-	public init(notificationName: String, callback: (NSNotification, T) -> Void)
+	public init(notificationName: String, object: AnyObject? = nil, callback: (NSNotification, T) -> Void)
 NSTimerExtension.swift
 	public class func scheduledTimerWithTimeInterval(interval: NSTimeInterval, userInfo: AnyObject? = nil, repeats: Bool = false, callback: TimerFiredCallback)
         -> NSTimer
