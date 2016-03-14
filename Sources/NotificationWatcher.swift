@@ -12,9 +12,9 @@ public class NotificationWatcher
 {
     private let receiver: NotificationReceiver
     
-    public init(notificationName: String, object: AnyObject? = nil, callback: (NSNotification) -> Void)
+    public init(notificationName: String, object: AnyObject? = nil, startWatching: Bool = true, callback: (NSNotification) -> Void)
     {
-        self.receiver = NotificationReceiver(notificationName: notificationName, object: object) { notif in
+        self.receiver = NotificationReceiver(notificationName: notificationName, object: object, startWatching: startWatching) { notif in
             callback(notif)
         }
     }
@@ -32,9 +32,9 @@ public class NotificationWatcher
 
 public class NotificationObjectWatcher<T>: NotificationWatcher
 {
-    public init(notificationName: String, object: AnyObject? = nil, callback: (NSNotification, T) -> Void)
+    public init(notificationName: String, object: AnyObject? = nil, startWatching: Bool = true, callback: (NSNotification, T) -> Void)
     {
-        super.init(notificationName: notificationName, object: object, callback: { notif in
+        super.init(notificationName: notificationName, object: object, startWatching: startWatching, callback: { notif in
             if let typedObj = notif.object as? T {
                 callback(notif, typedObj)
             }
@@ -49,13 +49,15 @@ private class NotificationReceiver
     let object: AnyObject?
     var isObserving = false
     
-    init(notificationName: String, object: AnyObject? = nil, callback: (NSNotification) -> Void)
+    init(notificationName: String, object: AnyObject? = nil, startWatching: Bool, callback: (NSNotification) -> Void)
     {
         self.notificationName = notificationName
         self.object = object
         self.callback = callback
 
-        startObserving()
+        if startWatching {
+            startObserving()
+        }
     }
     
     deinit {
