@@ -23,7 +23,7 @@ class ExceptionTests: XCTestCase
 
         let shouldFail = Exception.doTry({
             // throwing an exception should result in returning false
-            Exception.throwExceptionWithName("It's full of fail!")
+            Exception.throw(withName: "It's full of fail!")
         })
         XCTAssertFalse(shouldFail)
     }
@@ -50,7 +50,7 @@ class ExceptionTests: XCTestCase
             .doTry({
                 // throwing an exception should result in 
                 // hitting the catch block below & returning false
-                Exception.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.")
+                Exception.throw(withName: "It's full of fail!", reason: "I have my reasons.")
             },
             catchException: {ex in
                 print("Exception caught (this was an expected failure and is safe to ignore): \(ex))")
@@ -83,7 +83,7 @@ class ExceptionTests: XCTestCase
             .doTry({
                 // throwing an exception should result in
                 // hitting the catch block below & returning false
-                Exception.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.", userInfo: ["info": "here is some info"])
+                Exception.throw(withName: "It's full of fail!", reason: "I have my reasons.", userInfo: ["info": "here is some info"])
             },
             finally: {
                 didHitFinallyBlock = true
@@ -121,7 +121,7 @@ class ExceptionTests: XCTestCase
             .doTry({
                 // throwing an exception should result in
                 // hitting the catch block below & returning false
-                Exception.throwExceptionWithName("It's full of fail!", reason: "I have my reasons.", userInfo: ["info": "different info than before"])
+                Exception.throw(withName: "It's full of fail!", reason: "I have my reasons.", userInfo: ["info": "different info than before"])
             },
             catchException: {ex in
                 print("Exception caught (this was an expected failure and is safe to ignore): \(ex))")

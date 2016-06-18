@@ -15,7 +15,7 @@ class TargetActionTests: XCTestCase
     func testNoArgAction()
     {
         var flag = false
-        let condition = NSCondition()
+        let condition = Condition()
 
         let targetAction = TargetAction() {
             print("Invoked!")
@@ -26,12 +26,12 @@ class TargetActionTests: XCTestCase
             condition.unlock()
         }
 
-        let timer = NSTimer(fireDate: NSDate.distantFuture(), interval: 0.0, target: targetAction.target, selector: targetAction.action, userInfo: nil, repeats: false)
+        let timer = Timer(fireAt: Date.distantFuture, interval: 0.0, target: targetAction.target, selector: targetAction.action, userInfo: nil, repeats: false)
 
         timer.fire()
 
         condition.lock()
-        condition.waitUntilDate(NSDate().dateByAddingTimeInterval(1.0))
+        condition.wait(until: Date().addingTimeInterval(1.0))
         condition.unlock()
 
         XCTAssertTrue(flag)
@@ -40,13 +40,13 @@ class TargetActionTests: XCTestCase
     func testSingleArgAction()
     {
         var flag = false
-        let condition = NSCondition()
+        let condition = Condition()
         let userInfo = "(info for the user)"
 
         let targetAction = TargetAction() { (argument: AnyObject?) -> Void in
             print("Invoked with: \(argument?.description)")
 
-            let timer = argument as? NSTimer
+            let timer = argument as? Timer
             XCTAssertTrue(timer != nil)
             XCTAssertTrue(timer!.userInfo as? String == userInfo)
 
@@ -56,12 +56,12 @@ class TargetActionTests: XCTestCase
             condition.unlock()
         }
 
-        let timer = NSTimer(fireDate: NSDate.distantFuture(), interval: 0.0, target: targetAction.target, selector: targetAction.action, userInfo: userInfo, repeats: false)
+        let timer = Timer(fireAt: Date.distantFuture, interval: 0.0, target: targetAction.target, selector: targetAction.action, userInfo: userInfo, repeats: false)
 
         timer.fire()
 
         condition.lock()
-        condition.waitUntilDate(NSDate().dateByAddingTimeInterval(1.0))
+        condition.wait(until: Date().addingTimeInterval(1.0))
         condition.unlock()
 
         XCTAssertTrue(flag)

@@ -66,7 +66,7 @@ public class TargetAction
         noArgCallback!()
     }
 
-    @objc private func singleArgAction(arg: AnyObject?)
+    @objc private func singleArgAction(_ arg: AnyObject?)
     {
         singleArgCallback!(arg)
     }

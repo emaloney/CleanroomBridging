@@ -8,59 +8,59 @@
 
 import Foundation
 
-extension NSTimer
+extension Timer
 {
-    public typealias TimerFiredCallback = (NSTimer) -> Void
+    public typealias TimerFiredCallback = (Timer) -> Void
 
-    public class func scheduledTimerWithTimeInterval(interval: NSTimeInterval, userInfo: AnyObject? = nil, repeats: Bool = false, callback: TimerFiredCallback)
-        -> NSTimer
+    public class func scheduledTimerWithTimeInterval(_ interval: TimeInterval, userInfo: AnyObject? = nil, repeats: Bool = false, callback: TimerFiredCallback)
+        -> Timer
     {
         let ta = TargetAction() { (obj: AnyObject?) in
-            callback(obj as! NSTimer)
+            callback(obj as! Timer)
         }
 
-        let timer = NSTimer(timeInterval: interval, target: ta, selector: ta.action, userInfo: userInfo, repeats: repeats)
+        let timer = Timer(timeInterval: interval, target: ta, selector: ta.action, userInfo: userInfo, repeats: repeats)
 
-        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+        RunLoop.main().add(timer, forMode: RunLoopMode.commonModes)
 
         return timer
     }
 
-    public class func scheduledTimerWithFireDate(fireDate: NSDate, callback: TimerFiredCallback)
-        -> NSTimer
+    public class func scheduledTimerWithFireDate(_ fireDate: Date, callback: TimerFiredCallback)
+        -> Timer
     {
-        let timer = NSTimer(fireDate: fireDate, callback: callback)
+        let timer = Timer(fireDate: fireDate, callback: callback)
 
-        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+        RunLoop.main().add(timer, forMode: RunLoopMode.commonModes)
 
         return timer
     }
 
-    public class func scheduledTimerWithFireDate(fireDate: NSDate, repeatInterval: NSTimeInterval, callback: TimerFiredCallback)
-        -> NSTimer
+    public class func scheduledTimerWithFireDate(_ fireDate: Date, repeatInterval: TimeInterval, callback: TimerFiredCallback)
+        -> Timer
     {
-        let timer = NSTimer(fireDate: fireDate, repeatInterval: repeatInterval, callback: callback)
+        let timer = Timer(fireDate: fireDate, repeatInterval: repeatInterval, callback: callback)
 
-        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+        RunLoop.main().add(timer, forMode: RunLoopMode.commonModes)
 
         return timer
     }
 
-    public convenience init(fireDate: NSDate, callback: TimerFiredCallback)
+    public convenience init(fireDate: Date, callback: TimerFiredCallback)
     {
         let ta = TargetAction() { (obj: AnyObject?) in
-            callback(obj as! NSTimer)
+            callback(obj as! Timer)
         }
 
-        self.init(fireDate: fireDate, interval: 0.0, target: ta, selector: ta.action, userInfo: nil, repeats: false)
+        self.init(fireAt: fireDate, interval: 0.0, target: ta, selector: ta.action, userInfo: nil, repeats: false)
     }
 
-    public convenience init(fireDate: NSDate, repeatInterval: NSTimeInterval, callback: TimerFiredCallback)
+    public convenience init(fireDate: Date, repeatInterval: TimeInterval, callback: TimerFiredCallback)
     {
         let ta = TargetAction() { (obj: AnyObject?) in
-            callback(obj as! NSTimer)
+            callback(obj as! Timer)
         }
 
-        self.init(fireDate: fireDate, interval: repeatInterval, target: ta, selector: ta.action, userInfo: nil, repeats: true)
+        self.init(fireAt: fireDate, interval: repeatInterval, target: ta, selector: ta.action, userInfo: nil, repeats: true)
     }
 }

@@ -12,7 +12,7 @@ public class NotificationWatcher
 {
     private let receiver: NotificationReceiver
     
-    public init(notificationName: String, object: AnyObject? = nil, startWatching: Bool = true, callback: (NSNotification) -> Void)
+    public init(notificationName: String, object: AnyObject? = nil, startWatching: Bool = true, callback: (Notification) -> Void)
     {
         self.receiver = NotificationReceiver(notificationName: notificationName, object: object, startWatching: startWatching) { notif in
             callback(notif)
@@ -32,7 +32,7 @@ public class NotificationWatcher
 
 public class NotificationObjectWatcher<T>: NotificationWatcher
 {
-    public init(notificationName: String, object: AnyObject? = nil, startWatching: Bool = true, callback: (NSNotification, T) -> Void)
+    public init(notificationName: String, object: AnyObject? = nil, startWatching: Bool = true, callback: (Notification, T) -> Void)
     {
         super.init(notificationName: notificationName, object: object, startWatching: startWatching, callback: { notif in
             if let typedObj = notif.object as? T {
@@ -44,12 +44,12 @@ public class NotificationObjectWatcher<T>: NotificationWatcher
 
 private class NotificationReceiver
 {
-    let callback: (NSNotification) -> Void
+    let callback: (Notification) -> Void
     let notificationName: String
     let object: AnyObject?
     var isObserving = false
     
-    init(notificationName: String, object: AnyObject? = nil, startWatching: Bool, callback: (NSNotification) -> Void)
+    init(notificationName: String, object: AnyObject? = nil, startWatching: Bool, callback: (Notification) -> Void)
     {
         self.notificationName = notificationName
         self.object = object
@@ -64,7 +64,7 @@ private class NotificationReceiver
         stopObserving()
     }
     
-    @objc func notificationReceived(notification: NSNotification)
+    @objc func notificationReceived(_ notification: Notification)
     {
         callback(notification)
     }
@@ -72,7 +72,7 @@ private class NotificationReceiver
     func startObserving()
     {
         if !isObserving {
-            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NotificationReceiver.notificationReceived(_:)), name: notificationName, object: object)
+            NotificationCenter.default().addObserver(self, selector: #selector(NotificationReceiver.notificationReceived(_:)), name: notificationName, object: object)
             isObserving = true
         }
     }
@@ -81,7 +81,7 @@ private class NotificationReceiver
     {
         if isObserving {
             isObserving = false
-            NSNotificationCenter.defaultCenter().removeObserver(self)
+            NotificationCenter.default().removeObserver(self)
         }
     }
 }
