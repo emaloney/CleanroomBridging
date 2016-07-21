@@ -21,7 +21,7 @@ extension Timer
 
         let timer = Timer(timeInterval: interval, target: ta, selector: ta.action, userInfo: userInfo, repeats: repeats)
 
-        RunLoop.main().add(timer, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
 
         return timer
     }
@@ -31,7 +31,7 @@ extension Timer
     {
         let timer = Timer(fireDate: fireDate, callback: callback)
 
-        RunLoop.main().add(timer, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
 
         return timer
     }
@@ -41,7 +41,7 @@ extension Timer
     {
         let timer = Timer(fireDate: fireDate, repeatInterval: repeatInterval, callback: callback)
 
-        RunLoop.main().add(timer, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
 
         return timer
     }

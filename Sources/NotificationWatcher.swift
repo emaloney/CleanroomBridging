@@ -72,7 +72,7 @@ private class NotificationReceiver
     func startObserving()
     {
         if !isObserving {
-            NotificationCenter.default().addObserver(self, selector: #selector(NotificationReceiver.notificationReceived(_:)), name: notificationName, object: object)
+            NotificationCenter.default.addObserver(self, selector: #selector(NotificationReceiver.notificationReceived(_:)), name: NSNotification.Name(rawValue: notificationName), object: object)
             isObserving = true
         }
     }
@@ -81,7 +81,7 @@ private class NotificationReceiver
     {
         if isObserving {
             isObserving = false
-            NotificationCenter.default().removeObserver(self)
+            NotificationCenter.default.removeObserver(self)
         }
     }
 }
