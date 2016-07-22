@@ -21,9 +21,9 @@ The [`master`](https://github.com/emaloney/CleanroomBridging) branch of this pro
 
 Branch|Build status
 --------|------------------------
-`master`|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomBridging)
-`swift2.3`|[![Build status: swift2.3 branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=swift2.3)](https://travis-ci.org/emaloney/CleanroomBridging)
-`swift3`|[![Build status: swift3 branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=swift3)](https://travis-ci.org/emaloney/CleanroomBridging)
+[`master`](https://github.com/emaloney/CleanroomBridging)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomBridging)
+[`swift2.3`](https://github.com/emaloney/CleanroomBridging/tree/swift2.3)|[![Build status: swift2.3 branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=swift2.3)](https://travis-ci.org/emaloney/CleanroomBridging)
+[`swift3`](https://github.com/emaloney/CleanroomBridging/tree/swift3)|[![Build status: swift3 branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=swift3)](https://travis-ci.org/emaloney/CleanroomBridging)
 
 
 ### License
