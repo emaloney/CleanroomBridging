@@ -426,7 +426,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					3B00E55C1BA3782D0011486D = {
 						CreatedOnToolsVersion = 7.1;
@@ -1237,6 +1237,7 @@
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 6;
+				ENABLE_TESTABILITY = YES;
 			};
 			name = Debug;
 		};
