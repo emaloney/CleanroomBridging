@@ -415,10 +415,10 @@ fi
 #
 # see if we've got uncommitted changes
 #
-# git diff-index --quiet HEAD -- ; REPO_IS_DIRTY=$?
-# if [[ $REPO_IS_DIRTY != 0 && -z $STASH_DIRTY_FILES && -z $COMMIT_DIRTY_FILES ]]; then
-# 	exitWithErrorSuggestHelp "You have uncommitted changes in this repo; won't do anything" "(use --stash-dirty-files or --commit-dirty-files to bypass this error)"
-# fi
+git diff-index --quiet HEAD -- ; REPO_IS_DIRTY=$?
+if [[ $REPO_IS_DIRTY != 0 && -z $STASH_DIRTY_FILES && -z $COMMIT_DIRTY_FILES ]]; then
+	exitWithErrorSuggestHelp "You have uncommitted changes in this repo; won't do anything" "(use --stash-dirty-files or --commit-dirty-files to bypass this error)"
+fi
 
 confirmationPrompt "Releasing $REPO_NAME $VERSION (current is $CURRENT_VERSION)"
 
