@@ -8,13 +8,13 @@
 
 #import "AssociatedObject.h"
 
-@implementation NSObject (CleanroomBaseAssociatedObject)
+@implementation NSObject (CleanroomBridgingAssociatedObject)
 
 - (void) setAssociatedObject:(nullable id)object
                       forKey:(nonnull NSString*)key
-               storagePolicy:(objc_AssociationPolicy)policy
+               storagePolicy:(ObjectStoragePolicy)policy
 {
-    objc_setAssociatedObject(self, (__bridge const void*)key, object, policy);
+    objc_setAssociatedObject(self, (__bridge const void*)key, object, (objc_AssociationPolicy)policy);
 }
 
 - (nullable id) associatedObjectForKey:(nonnull NSString*)key
