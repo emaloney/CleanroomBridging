@@ -11,15 +11,15 @@
 @implementation NSObject (CleanroomBaseAssociatedObject)
 
 - (void) setAssociatedObject:(nullable id)object
-                      forKey:(nonnull const void*)key
+                      forKey:(nonnull NSString*)key
                storagePolicy:(objc_AssociationPolicy)policy
 {
-    objc_setAssociatedObject(self, key, object, policy);
+    objc_setAssociatedObject(self, (__bridge const void*)key, object, policy);
 }
 
-- (nullable id) associatedObjectForKey:(nonnull const void*)key
+- (nullable id) associatedObjectForKey:(nonnull NSString*)key
 {
-    return objc_getAssociatedObject(self, key);
+    return objc_getAssociatedObject(self, (__bridge const void*)key);
 }
 
 @end
