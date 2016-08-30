@@ -14,12 +14,12 @@
                       forKey:(nonnull NSString*)key
                storagePolicy:(ObjectStoragePolicy)policy
 {
-    objc_setAssociatedObject(self, (__bridge const void*)key, object, (objc_AssociationPolicy)policy);
+    objc_setAssociatedObject(self, (const void*)[key hash], object, (objc_AssociationPolicy)policy);
 }
 
 - (nullable id) associatedObjectForKey:(nonnull NSString*)key
 {
-    return objc_getAssociatedObject(self, (__bridge const void*)key);
+    return objc_getAssociatedObject(self, (const void*)[key hash]);
 }
 
 @end
