@@ -10,6 +10,9 @@
 		3B00E5681BA3782D0011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E55D1BA3782D0011486D /* CleanroomBridging.framework */; };
 		3B00E5861BA379830011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E57C1BA379830011486D /* CleanroomBridging.framework */; };
 		3B00E5A41BA37A420011486D /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E59A1BA37A420011486D /* CleanroomBridging.framework */; };
+		3B1347D11D753DE8002F7D59 /* AssociatedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1347D01D753DE8002F7D59 /* AssociatedObjectTests.swift */; };
+		3B1347D21D753DE8002F7D59 /* AssociatedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1347D01D753DE8002F7D59 /* AssociatedObjectTests.swift */; };
+		3B1347D31D753DE8002F7D59 /* AssociatedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1347D01D753DE8002F7D59 /* AssociatedObjectTests.swift */; };
 		3B5A83531C3DBF0500BCE18A /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B5A83541C3DBF0500BCE18A /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B5A83551C3DBF0500BCE18A /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A834B1C3DBF0500BCE18A /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,6 +82,7 @@
 		3B00E5851BA379830011486D /* CleanroomBridgingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E59A1BA37A420011486D /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E5A31BA37A420011486D /* CleanroomBridgingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1347D01D753DE8002F7D59 /* AssociatedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatedObjectTests.swift; sourceTree = "<group>"; };
 		3B38DBD01BA76428000986DF /* Debug-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-iOS.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD11BA76428000986DF /* Debug-OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-OSX.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD21BA76428000986DF /* Debug-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-tvOS.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 		3B00E4D51BA36B840011486D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3B1347D01D753DE8002F7D59 /* AssociatedObjectTests.swift */,
 				3B5A83831C3DC10100BCE18A /* ExceptionTrapTests.swift */,
 				3B5A83841C3DC10100BCE18A /* TargetActionTests.swift */,
 			);
@@ -426,7 +431,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					3B00E55C1BA3782D0011486D = {
 						CreatedOnToolsVersion = 7.1;
@@ -550,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1347D11D753DE8002F7D59 /* AssociatedObjectTests.swift in Sources */,
 				3B5A83851C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */,
 				3B5A83881C3DC10100BCE18A /* TargetActionTests.swift in Sources */,
 			);
@@ -571,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1347D21D753DE8002F7D59 /* AssociatedObjectTests.swift in Sources */,
 				3B5A83861C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */,
 				3B5A83891C3DC10100BCE18A /* TargetActionTests.swift in Sources */,
 			);
@@ -592,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1347D31D753DE8002F7D59 /* AssociatedObjectTests.swift in Sources */,
 				3B5A83871C3DC10100BCE18A /* ExceptionTrapTests.swift in Sources */,
 				3B5A838A1C3DC10100BCE18A /* TargetActionTests.swift in Sources */,
 			);
@@ -1257,7 +1265,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 10;
+				ENABLE_TESTABILITY = YES;
 			};
 			name = Debug;
 		};
@@ -1265,7 +1274,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 10;
 			};
 			name = Release;
 		};

@@ -1,6 +1,6 @@
 //
 //  ExceptionTests.swift
-//  Cleanroom
+//  Cleanroom Project
 //
 //  Created by Evan Maloney on 1/2/15.
 //  Copyright © 2015 Gilt Groupe. All rights reserved.
