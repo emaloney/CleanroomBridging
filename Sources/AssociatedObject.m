@@ -8,18 +8,18 @@
 
 #import "AssociatedObject.h"
 
-@implementation NSObject (CleanroomBaseAssociatedObject)
+@implementation NSObject (CleanroomBridgingAssociatedObject)
 
 - (void) setAssociatedObject:(nullable id)object
-                      forKey:(nonnull const void*)key
-               storagePolicy:(objc_AssociationPolicy)policy
+                      forKey:(nonnull NSString*)key
+               storagePolicy:(ObjectStoragePolicy)policy
 {
-    objc_setAssociatedObject(self, key, object, policy);
+    objc_setAssociatedObject(self, (const void*)[key hash], object, (objc_AssociationPolicy)policy);
 }
 
-- (nullable id) associatedObjectForKey:(nonnull const void*)key
+- (nullable id) associatedObjectForKey:(nonnull NSString*)key
 {
-    return objc_getAssociatedObject(self, key);
+    return objc_getAssociatedObject(self, (const void*)[key hash]);
 }
 
 @end

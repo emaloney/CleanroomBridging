@@ -9,13 +9,21 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
-@interface NSObject (CleanroomBaseAssociatedObject)
+typedef NS_ENUM(NSInteger, ObjectStoragePolicy) {
+    ObjectStoragePolicyWeak = OBJC_ASSOCIATION_ASSIGN,
+    ObjectStoragePolicyRetainNonatomic = OBJC_ASSOCIATION_RETAIN_NONATOMIC,
+    ObjectStoragePolicyCopyNonatomic = OBJC_ASSOCIATION_COPY_NONATOMIC,
+    ObjectStoragePolicyRetainAtomic = OBJC_ASSOCIATION_RETAIN,
+    ObjectStoragePolicyCopyAtomic = OBJC_ASSOCIATION_COPY
+};
+
+@interface NSObject (CleanroomBridgingAssociatedObject)
 
 - (void) setAssociatedObject:(nullable id)object
-                      forKey:(nonnull const void*)key
-               storagePolicy:(objc_AssociationPolicy)policy;
+                      forKey:(nonnull NSString*)key
+               storagePolicy:(ObjectStoragePolicy)policy;
 
-- (nullable id) associatedObjectForKey:(nonnull const void*)key;
+- (nullable id) associatedObjectForKey:(nonnull NSString*)key;
 
 @end
 

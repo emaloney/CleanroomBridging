@@ -41,7 +41,7 @@ public class TargetAction
      target/action pair represented by the newly-constructed instance is
      invoked.
     */
-    public init(callback: () -> Void)
+    public init(callback: @escaping () -> Void)
     {
         self.noArgCallback = callback
         self.singleArgCallback = nil
@@ -55,7 +55,7 @@ public class TargetAction
      invoked. The `AnyObject?` argument passed to `callback` will be the 
      argument sent to `action` when invoked.
     */
-    public init(callback: (AnyObject?) -> Void)
+    public init(callback: @escaping (AnyObject?) -> Void)
     {
         self.noArgCallback = nil
         self.singleArgCallback = callback
