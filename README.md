@@ -28,7 +28,7 @@ Branch|Build status
 
 ### License
 
-CleanroomBridging is distributed under [the MIT license](/blob/master/LICENSE).
+CleanroomBridging is distributed under [the MIT license](https://github.com/emaloney/CleanroomBridging/blob/master/LICENSE).
 
 CleanroomBridging is provided for your use—free-of-charge—on an as-is basis. We make no guarantees, promises or apologies. *Caveat developer.*
 
