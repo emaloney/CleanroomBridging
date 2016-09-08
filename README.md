@@ -9,11 +9,11 @@ CleanroomBridging is part of [the Cleanroom Project](https://github.com/gilt/Cle
 
 ### Swift compatibility
 
-This is the `master` branch. It uses **Swift 2.2** and **requires Xcode 7.3** (or higher) to compile.
+**Important:** This is the `swift2.3` branch. It uses **Swift 2.3** and **requires Xcode 8.0 beta 6** (or higher) to compile.
 
 2 other branches are also available:
 
-- The [`swift2.3`](https://github.com/emaloney/CleanroomBridging/tree/swift2.3) branch uses **Swift 2.3**, requiring Xcode 8.0 beta 6
+- The [`master`](https://github.com/emaloney/CleanroomBridging) branch uses **Swift 2.2**, requiring Xcode 7.3
 - The [`swift3`](https://github.com/emaloney/CleanroomBridging/tree/swift3) branch uses **Swift 3.0**, requiring Xcode 8.0 beta 6
 
 
