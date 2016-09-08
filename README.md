@@ -9,20 +9,15 @@ CleanroomBridging is part of [the Cleanroom Project](https://github.com/gilt/Cle
 
 ### Swift compatibility
 
-**Important:** This is the `swift2.3` branch. It uses **Swift 2.3** and **requires Xcode 8.0 beta 6** (or higher) to compile.
+This is the `master` branch. It uses **Swift 2.3** and **requires Xcode 8.0** to compile.
 
-2 other branches are also available:
-
-- The [`master`](https://github.com/emaloney/CleanroomBridging) branch uses **Swift 2.2**, requiring Xcode 7.3
-- The [`swift3`](https://github.com/emaloney/CleanroomBridging/tree/swift3) branch uses **Swift 3.0**, requiring Xcode 8.0 beta 6
-
+If you need Swift 3.0 compatibility, a [`swift3`](https://github.com/emaloney/CleanroomBridging/tree/swift3) branch is also available. It requires Xcode 8.0.
 
 #### Current status
 
 Branch|Build status
 --------|------------------------
 [`master`](https://github.com/emaloney/CleanroomBridging)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomBridging)
-[`swift2.3`](https://github.com/emaloney/CleanroomBridging/tree/swift2.3)|[![Build status: swift2.3 branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=swift2.3)](https://travis-ci.org/emaloney/CleanroomBridging)
 [`swift3`](https://github.com/emaloney/CleanroomBridging/tree/swift3)|[![Build status: swift3 branch](https://travis-ci.org/emaloney/CleanroomBridging.svg?branch=swift3)](https://travis-ci.org/emaloney/CleanroomBridging)
 
 
