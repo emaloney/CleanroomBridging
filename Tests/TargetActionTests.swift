@@ -15,7 +15,7 @@ class TargetActionTests: XCTestCase
     func testNoArgAction()
     {
         var flag = false
-        let condition = Condition()
+        let condition = NSCondition()
 
         let targetAction = TargetAction() {
             print("Invoked!")
@@ -40,7 +40,7 @@ class TargetActionTests: XCTestCase
     func testSingleArgAction()
     {
         var flag = false
-        let condition = Condition()
+        let condition = NSCondition()
         let userInfo = "(info for the user)"
 
         let targetAction = TargetAction() { (argument: AnyObject?) -> Void in
