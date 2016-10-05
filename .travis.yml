@@ -13,13 +13,13 @@ install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
 script:
-  - ( set -o pipefail && xcodebuild -project CleanroomBridging.xcodeproj -configuration Release ONLY_ACTIVE_ARCH=YES -scheme CleanroomBridging-iOS -destination 'platform=iOS Simulator,OS=10.0,name=iPhone 6s Plus' -destination-timeout 300 clean build 2>&1 | tee "CleanroomBridging-iOS-build.log" | xcpretty ) && rm "CleanroomBridging-iOS-build.log"
-  - ( set -o pipefail && xcodebuild -project CleanroomBridging.xcodeproj -configuration Release ONLY_ACTIVE_ARCH=YES -scheme CleanroomBridging-iOS -destination 'platform=iOS Simulator,OS=10.0,name=iPhone 6s Plus' -destination-timeout 300 test 2>&1 | tee "CleanroomBridging-iOS-test.log" | xcpretty ) && rm "CleanroomBridging-iOS-test.log"
-  - ( set -o pipefail && xcodebuild -project CleanroomBridging.xcodeproj -configuration Release ONLY_ACTIVE_ARCH=YES -scheme CleanroomBridging-OSX -destination 'platform=macOS' -destination-timeout 300 clean build 2>&1 | tee "CleanroomBridging-macOS-build.log" | xcpretty ) && rm "CleanroomBridging-macOS-build.log"
-  - ( set -o pipefail && xcodebuild -project CleanroomBridging.xcodeproj -configuration Release ONLY_ACTIVE_ARCH=YES -scheme CleanroomBridging-OSX -destination 'platform=macOS' -destination-timeout 300 test 2>&1 | tee "CleanroomBridging-macOS-test.log" | xcpretty ) && rm "CleanroomBridging-macOS-test.log"
-  - ( set -o pipefail && xcodebuild -project CleanroomBridging.xcodeproj -configuration Release ONLY_ACTIVE_ARCH=YES -scheme CleanroomBridging-tvOS -destination 'platform=tvOS Simulator,OS=10.0,name=Apple TV 1080p' -destination-timeout 300 clean build 2>&1 | tee "CleanroomBridging-tvOS-build.log" | xcpretty ) && rm "CleanroomBridging-tvOS-build.log"
-  - ( set -o pipefail && xcodebuild -project CleanroomBridging.xcodeproj -configuration Release ONLY_ACTIVE_ARCH=YES -scheme CleanroomBridging-tvOS -destination 'platform=tvOS Simulator,OS=10.0,name=Apple TV 1080p' -destination-timeout 300 test 2>&1 | tee "CleanroomBridging-tvOS-test.log" | xcpretty ) && rm "CleanroomBridging-tvOS-test.log"
-  - ( set -o pipefail && xcodebuild -project CleanroomBridging.xcodeproj -configuration Release ONLY_ACTIVE_ARCH=YES -scheme CleanroomBridging-watchOS -destination 'platform=watchOS Simulator,OS=3.0,name=Apple Watch - 42mm' -destination-timeout 300 clean build 2>&1 | tee "CleanroomBridging-watchOS-build.log" | xcpretty ) && rm "CleanroomBridging-watchOS-build.log"
+  - ./BuildControl/bin/travisBuildHelper.sh build iOS
+  - ./BuildControl/bin/travisBuildHelper.sh test iOS
+  - ./BuildControl/bin/travisBuildHelper.sh build OSX
+  - ./BuildControl/bin/travisBuildHelper.sh test OSX
+  - ./BuildControl/bin/travisBuildHelper.sh build tvOS
+  - ./BuildControl/bin/travisBuildHelper.sh test tvOS
+  - ./BuildControl/bin/travisBuildHelper.sh build watchOS
 
 after_failure:
   - test -f "CleanroomBridging-iOS-build.log" && tail -n 2500 "CleanroomBridging-iOS-build.log"
