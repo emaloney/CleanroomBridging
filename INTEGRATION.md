@@ -241,7 +241,7 @@ Before we can add `CleanroomBridging.framework` to your app, we have to build it
 
 **Important:** The next step will only work when the framework is built for a **device-based run destination**. That means that you must either select the “My Mac” or “iOS Device” run destination before building, or you must select an actual external device (an option that’s only available when such a device is connected to your development machine).
 
-Once a device-based run destination has been selected, select the appropriate build scheme for the target platform: “CleanroomBridging-iOS”, “CleanroomBridging-OSX”, “CleanroomBridging-tvOS” or “CleanroomBridging-watchOS”.
+Once a device-based run destination has been selected, select the appropriate build scheme for the target platform: “CleanroomBridging-iOS”, “CleanroomBridging-macOS”, “CleanroomBridging-tvOS” or “CleanroomBridging-watchOS”.
 
 Then, select *Build* (⌘B) from the *Product* menu.
 
