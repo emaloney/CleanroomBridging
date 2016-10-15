@@ -1,4 +1,4 @@
-language: objective-c 
+language: objective-c
 xcode_project: CleanroomBridging.xcodeproj
 osx_image: xcode8
 
@@ -32,4 +32,3 @@ after_failure:
   - test -f "CleanroomBridging-tvOS-test.log" && tail -n 2500 "CleanroomBridging-tvOS-test.log"
   - test -f "CleanroomBridging-tvOS-test.log" && LINE_BEFORE=`cat "CleanroomBridging-tvOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomBridging-tvOS-test.log" | tail -n 1` && cat "$LOG_FILE"
   - test -f "CleanroomBridging-watchOS-build.log" && tail -n 2500 "CleanroomBridging-watchOS-build.log"
-

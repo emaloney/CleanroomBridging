@@ -17,8 +17,8 @@ class AssociatedObjectTests: XCTestCase
         let receiver = NSObject()
         let key = "old timey key"
         let fineMess = "This is a fine mess"
-        receiver.setAssociatedObject(fineMess, forKey: key, storagePolicy: .RetainAtomic)
-        let gotten = receiver.associatedObjectForKey(key)
+        receiver.setAssociated(fineMess, forKey: key, storagePolicy: .retainAtomic)
+        let gotten = receiver.associatedObject(forKey: key)
         XCTAssertEqual(gotten as? String, fineMess)
     }
 
@@ -27,8 +27,8 @@ class AssociatedObjectTests: XCTestCase
         // this fails sporadically under CleanroomBridging 0.7.0 and lower
         let receiver = NSObject()
         let fineMess = "This is a fine mess"
-        receiver.setAssociatedObject(fineMess, forKey: "old timey key", storagePolicy: .RetainAtomic)
-        let gotten = receiver.associatedObjectForKey("old timey key")
+        receiver.setAssociated(fineMess, forKey: "old timey key", storagePolicy: .retainAtomic)
+        let gotten = receiver.associatedObject(forKey: "old timey key")
         XCTAssertEqual(gotten as? String, fineMess)
     }
 
@@ -37,8 +37,8 @@ class AssociatedObjectTests: XCTestCase
         // this fails 100% of the time under CleanroomBridging 0.7.0 and lower
         let receiver = NSObject()
         let fineMess = "This is a fine mess"
-        receiver.setAssociatedObject(fineMess, forKey: ("old timey key" as NSString).copy() as! String, storagePolicy: .RetainAtomic)
-        let gotten = receiver.associatedObjectForKey(("old timey key" as NSString).copy() as! String)
+        receiver.setAssociated(fineMess, forKey: ("old timey key" as NSString).copy() as! String, storagePolicy: .retainAtomic)
+        let gotten = receiver.associatedObject(forKey: ("old timey key" as NSString).copy() as! String)
         XCTAssertEqual(gotten as? String, fineMess)
     }
 }
