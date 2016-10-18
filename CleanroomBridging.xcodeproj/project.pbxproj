@@ -1242,7 +1242,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				ENABLE_TESTABILITY = YES;
 			};
 			name = Debug;
@@ -1251,7 +1251,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 			};
 			name = Release;
 		};
