@@ -1,1 +1,96 @@
-{"warnings":[{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift","line":11,"symbol":"NotificationWatcher","symbol_kind":"source.lang.swift.decl.class","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift","line":15,"symbol":"init(notificationName:object:startWatching:callback:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift","line":22,"symbol":"init(notificationNames:object:startWatching:callback:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift","line":31,"symbol":"stopWatching()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift","line":36,"symbol":"resumeWatching()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift","line":42,"symbol":"NotificationObjectWatcher","symbol_kind":"source.lang.swift.decl.class","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift","line":44,"symbol":"init(notificationName:object:startWatching:callback:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift","line":53,"symbol":"init(notificationNames:object:startWatching:callback:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift","line":15,"symbol":"scheduledTimerWithTimeInterval(_:userInfo:repeats:callback:)","symbol_kind":"source.lang.swift.decl.function.method.class","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift","line":29,"symbol":"scheduledTimerWithFireDate(_:callback:)","symbol_kind":"source.lang.swift.decl.function.method.class","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift","line":39,"symbol":"scheduledTimerWithFireDate(_:repeatInterval:callback:)","symbol_kind":"source.lang.swift.decl.function.method.class","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift","line":49,"symbol":"init(fireDate:callback:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift","line":58,"symbol":"init(fireDate:repeatInterval:callback:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"}],"source_directory":"/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging"}
+{
+  "warnings": [
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "line": 15,
+      "symbol": "Timer.scheduledTimerWithTimeInterval(_:userInfo:repeats:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "line": 29,
+      "symbol": "Timer.scheduledTimerWithFireDate(_:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "line": 39,
+      "symbol": "Timer.scheduledTimerWithFireDate(_:repeatInterval:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "line": 49,
+      "symbol": "Timer.init(fireDate:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "line": 58,
+      "symbol": "Timer.init(fireDate:repeatInterval:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 11,
+      "symbol": "NotificationWatcher",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 15,
+      "symbol": "NotificationWatcher.init(notificationName:object:startWatching:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 22,
+      "symbol": "NotificationWatcher.init(notificationNames:object:startWatching:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 31,
+      "symbol": "NotificationWatcher.stopWatching()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 36,
+      "symbol": "NotificationWatcher.resumeWatching()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 42,
+      "symbol": "NotificationObjectWatcher",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 44,
+      "symbol": "NotificationObjectWatcher.init(notificationName:object:startWatching:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 53,
+      "symbol": "NotificationObjectWatcher.init(notificationNames:object:startWatching:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging"
+}
