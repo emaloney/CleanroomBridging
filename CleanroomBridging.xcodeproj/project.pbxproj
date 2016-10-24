@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B8E57221DBE927B0014CCBA /* NotificationPostingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E57211DBE927B0014CCBA /* NotificationPostingExtension.swift */; };
 		3B90590D1DAECB5200B4EEC0 /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9059031DAECB5200B4EEC0 /* CleanroomBridging.framework */; };
 		3BD302541DB1A00300BEB111 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD3024C1DB1A00300BEB111 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BD302551DB1A00300BEB111 /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3024D1DB1A00300BEB111 /* AssociatedObject.m */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B8E57211DBE927B0014CCBA /* NotificationPostingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPostingExtension.swift; sourceTree = "<group>"; };
 		3B9059031DAECB5200B4EEC0 /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B90590C1DAECB5200B4EEC0 /* CleanroomBridgingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9059251DAECB9E00B4EEC0 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				3BD3024D1DB1A00300BEB111 /* AssociatedObject.m */,
 				3BD3024E1DB1A00300BEB111 /* Exception.h */,
 				3BD3024F1DB1A00300BEB111 /* Exception.m */,
+				3B8E57211DBE927B0014CCBA /* NotificationPostingExtension.swift */,
 				3BD302501DB1A00300BEB111 /* NotificationWatcher.swift */,
 				3BD302511DB1A00300BEB111 /* NSTimerExtension.swift */,
 				3BD302531DB1A00300BEB111 /* TargetAction.swift */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BD302591DB1A00300BEB111 /* NSTimerExtension.swift in Sources */,
+				3B8E57221DBE927B0014CCBA /* NotificationPostingExtension.swift in Sources */,
 				3BD302551DB1A00300BEB111 /* AssociatedObject.m in Sources */,
 				3BD302571DB1A00300BEB111 /* Exception.m in Sources */,
 				3BD3025B1DB1A00300BEB111 /* TargetAction.swift in Sources */,
