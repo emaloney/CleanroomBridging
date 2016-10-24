@@ -51,43 +51,71 @@
     },
     {
       "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
-      "line": 22,
+      "line": 21,
       "symbol": "NotificationWatcher.init(notificationNames:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
-      "line": 31,
+      "line": 27,
+      "symbol": "NotificationWatcher.init(notification:object:startWatching:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 32,
+      "symbol": "NotificationWatcher.init(notifications:object:startWatching:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 39,
       "symbol": "NotificationWatcher.stopWatching()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
-      "line": 36,
+      "line": 44,
       "symbol": "NotificationWatcher.resumeWatching()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
-      "line": 42,
+      "line": 50,
       "symbol": "NotificationObjectWatcher",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
-      "line": 44,
+      "line": 52,
       "symbol": "NotificationObjectWatcher.init(notificationName:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
-      "line": 53,
+      "line": 57,
       "symbol": "NotificationObjectWatcher.init(notificationNames:object:startWatching:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 63,
+      "symbol": "NotificationObjectWatcher.init(notification:object:startWatching:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "line": 72,
+      "symbol": "NotificationObjectWatcher.init(notifications:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

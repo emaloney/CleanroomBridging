@@ -14,7 +14,7 @@
     <a title="TargetAction Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CleanroomBridging Docs</a> (27% documented)</p>
+        <p><a href="../index.html">CleanroomBridging Docs</a> (22% documented)</p>
         <p class="header-right"><a href="https://github.com/emaloney/CleanroomBridging"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -58,7 +58,7 @@
             <h1>TargetAction</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TargetAction</span></code></pre>
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">TargetAction</span></code></pre>
 
                 </div>
               </div>
@@ -75,9 +75,9 @@ anywhere Cocoa calls for a target/action.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC17CleanroomBridging12TargetAction6targetPs9AnyObject_"></a>
+                    <a name="/s:vC17CleanroomBridging12TargetAction6targetP_"></a>
                     <a name="//apple_ref/swift/Property/target" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC17CleanroomBridging12TargetAction6targetPs9AnyObject_">target</a>
+                    <a class="token" href="#/s:vC17CleanroomBridging12TargetAction6targetP_">target</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -92,7 +92,7 @@ anywhere Cocoa calls for a target/action.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span></code></pre>
 
                         </div>
                       </div>
@@ -119,7 +119,7 @@ anywhere Cocoa calls for a target/action.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Selector</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Selector</span></code></pre>
 
                         </div>
                       </div>
@@ -176,9 +176,9 @@ anywhere Cocoa calls for a target/action.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17CleanroomBridging12TargetActioncFT8callbackFGSqPs9AnyObject__T__S0_"></a>
+                    <a name="/s:FC17CleanroomBridging12TargetActioncFT8callbackFGSqP__T__S0_"></a>
                     <a name="//apple_ref/swift/Method/init(callback:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17CleanroomBridging12TargetActioncFT8callbackFGSqPs9AnyObject__T__S0_">init(callback:)</a>
+                    <a class="token" href="#/s:FC17CleanroomBridging12TargetActioncFT8callbackFGSqP__T__S0_">init(callback:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -193,7 +193,7 @@ anywhere Cocoa calls for a target/action.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">AnyObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -209,7 +209,7 @@ anywhere Cocoa calls for a target/action.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>A callback closure that will be executed when the target/action pair represented by the newly-constructed instance is invoked. The <code>AnyObject?</code> argument passed to <code>callback</code> will be the argument sent to <code>action</code> when invoked.</p>
+                                  <p>A callback closure that will be executed when the target/action pair represented by the newly-constructed instance is invoked. The <code>Any?</code> argument passed to <code>callback</code> will be the argument sent to <code>action</code> when invoked.</p>
 
                                 </div>
                               </td>
