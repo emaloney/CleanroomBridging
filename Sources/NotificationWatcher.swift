@@ -8,51 +8,70 @@
 
 import Foundation
 
-public class NotificationWatcher
+open class NotificationWatcher
 {
     private let receivers: [NotificationReceiver]
 
-    public init(notificationName: String, object: AnyObject? = nil, startWatching: Bool = true, callback: @escaping (Notification) -> Void)
+    public convenience init(notificationName: String, object: Any? = nil, startWatching: Bool = true, callback: @escaping (Notification) -> Void)
     {
-        self.receivers = [NotificationReceiver(notificationName: notificationName, object: object, startWatching: startWatching) { notif in
-            callback(notif)
-        }]
+        self.init(notification: Notification.Name(notificationName), object: object, startWatching: startWatching, callback: callback)
     }
 
-    public init(notificationNames: [String], object: AnyObject? = nil, startWatching: Bool = true, callback: @escaping (Notification) -> Void)
+
+    public convenience init(notificationNames: [String], object: Any? = nil, startWatching: Bool = true, callback: @escaping (Notification) -> Void)
     {
-        self.receivers = notificationNames.map {
-            return NotificationReceiver(notificationName: $0, object: object, startWatching: startWatching) { notif in
-                callback(notif)
-            }
+        let notifications = notificationNames.map { Notification.Name($0) }
+        self.init(notifications: notifications, object: object, startWatching: startWatching, callback: callback)
+    }
+
+    public init(notification: Notification.Name, object: Any? = nil, startWatching: Bool = true, callback: @escaping (Notification) -> Void)
+    {
+        self.receivers = [NotificationReceiver(notification: notification, object: object, startWatching: startWatching, callback: callback)]
+    }
+
+    public init(notifications: [Notification.Name], object: Any? = nil, startWatching: Bool = true, callback: @escaping (Notification) -> Void)
+    {
+        self.receivers = notifications.map {
+            return NotificationReceiver(notification: $0, object: object, startWatching: startWatching, callback: callback)
         }
     }
 
-    public func stopWatching()
+    open func stopWatching()
     {
-        receivers.forEach{ $0.stopObserving() }
+        receivers.forEach { $0.stopObserving() }
     }
     
-    public func resumeWatching()
+    open func resumeWatching()
     {
-        receivers.forEach{ $0.startObserving() }
+        receivers.forEach { $0.startObserving() }
     }
 }
 
-public class NotificationObjectWatcher<T>: NotificationWatcher
+open class NotificationObjectWatcher<T>: NotificationWatcher
 {
-    public init(notificationName: String, object: AnyObject? = nil, startWatching: Bool = true, callback: @escaping (Notification, T) -> Void)
+    public convenience init(notificationName: String, object: Any? = nil, startWatching: Bool = true, callback: @escaping (Notification, T) -> Void)
     {
-        super.init(notificationName: notificationName, object: object, startWatching: startWatching, callback: { notif in
+        self.init(notification: Notification.Name(notificationName), object: object, startWatching: startWatching, callback: callback)
+    }
+
+    public convenience init(notificationNames: [String], object: Any? = nil, startWatching: Bool = true, callback: @escaping (Notification, T) -> Void)
+    {
+        let notifications = notificationNames.map { Notification.Name($0) }
+        self.init(notifications: notifications, object: object, startWatching: startWatching, callback: callback)
+    }
+
+    public init(notification: Notification.Name, object: Any? = nil, startWatching: Bool = true, callback: @escaping (Notification, T) -> Void)
+    {
+        super.init(notification: notification, object: object, startWatching: startWatching, callback: { notif in
             if let typedObj = notif.object as? T {
                 callback(notif, typedObj)
             }
         })
     }
 
-    public init(notificationNames: [String], object: AnyObject? = nil, startWatching: Bool = true, callback: @escaping (Notification, T) -> Void)
+    public init(notifications: [Notification.Name], object: Any? = nil, startWatching: Bool = true, callback: @escaping (Notification, T) -> Void)
     {
-        super.init(notificationNames: notificationNames, object: object, startWatching: startWatching, callback: { notif in
+        super.init(notifications: notifications, object: object, startWatching: startWatching, callback: { notif in
             if let typedObj = notif.object as? T {
                 callback(notif, typedObj)
             }
@@ -63,13 +82,13 @@ public class NotificationObjectWatcher<T>: NotificationWatcher
 private class NotificationReceiver
 {
     let callback: (Notification) -> Void
-    let notificationName: String
-    let object: AnyObject?
+    let notification: Notification.Name
+    let object: Any?
     var isObserving = false
     
-    init(notificationName: String, object: AnyObject? = nil, startWatching: Bool, callback: @escaping (Notification) -> Void)
+    init(notification: Notification.Name, object: Any? = nil, startWatching: Bool, callback: @escaping (Notification) -> Void)
     {
-        self.notificationName = notificationName
+        self.notification = notification
         self.object = object
         self.callback = callback
 
@@ -90,7 +109,7 @@ private class NotificationReceiver
     func startObserving()
     {
         if !isObserving {
-            NotificationCenter.default.addObserver(self, selector: #selector(NotificationReceiver.notificationReceived(_:)), name: NSNotification.Name(rawValue: notificationName), object: object)
+            NotificationCenter.default.addObserver(self, selector: #selector(NotificationReceiver.notificationReceived(_:)), name: notification, object: object)
             isObserving = true
         }
     }

@@ -12,10 +12,10 @@ extension Timer
 {
     public typealias TimerFiredCallback = (Timer) -> Void
 
-    public class func scheduledTimerWithTimeInterval(_ interval: TimeInterval, userInfo: AnyObject? = nil, repeats: Bool = false, callback: @escaping TimerFiredCallback)
+    open class func scheduledTimerWithTimeInterval(_ interval: TimeInterval, userInfo: Any? = nil, repeats: Bool = false, callback: @escaping TimerFiredCallback)
         -> Timer
     {
-        let ta = TargetAction() { (obj: AnyObject?) in
+        let ta = TargetAction() { (obj: Any?) in
             callback(obj as! Timer)
         }
 
@@ -26,7 +26,7 @@ extension Timer
         return timer
     }
 
-    public class func scheduledTimerWithFireDate(_ fireDate: Date, callback: @escaping TimerFiredCallback)
+    open class func scheduledTimerWithFireDate(_ fireDate: Date, callback: @escaping TimerFiredCallback)
         -> Timer
     {
         let timer = Timer(fireDate: fireDate, callback: callback)
@@ -36,7 +36,7 @@ extension Timer
         return timer
     }
 
-    public class func scheduledTimerWithFireDate(_ fireDate: Date, repeatInterval: TimeInterval, callback: @escaping TimerFiredCallback)
+    open class func scheduledTimerWithFireDate(_ fireDate: Date, repeatInterval: TimeInterval, callback: @escaping TimerFiredCallback)
         -> Timer
     {
         let timer = Timer(fireDate: fireDate, repeatInterval: repeatInterval, callback: callback)
@@ -48,7 +48,7 @@ extension Timer
 
     public convenience init(fireDate: Date, callback: @escaping TimerFiredCallback)
     {
-        let ta = TargetAction() { (obj: AnyObject?) in
+        let ta = TargetAction() { (obj: Any?) in
             callback(obj as! Timer)
         }
 
@@ -57,7 +57,7 @@ extension Timer
 
     public convenience init(fireDate: Date, repeatInterval: TimeInterval, callback: @escaping TimerFiredCallback)
     {
-        let ta = TargetAction() { (obj: AnyObject?) in
+        let ta = TargetAction() { (obj: Any?) in
             callback(obj as! Timer)
         }
 

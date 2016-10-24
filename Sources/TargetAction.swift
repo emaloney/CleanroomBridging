@@ -15,13 +15,13 @@ import Foundation
  `action` properties of the `TargetAction` instance as you would normally
  anywhere Cocoa calls for a target/action.
  */
-public class TargetAction
+open class TargetAction
 {
     /** The object to use as the *target* of a target/action pair. */
-    public var target: AnyObject { return self }
+    open var target: Any { return self }
 
     /** The `Selector` to use as the *action* of the target/action pair. */
-    public var action: Selector {
+    open var action: Selector {
         get {
             if noArgCallback != nil {
                 return #selector(TargetAction.noArgAction)
@@ -32,7 +32,7 @@ public class TargetAction
     }
 
     private let noArgCallback: (() -> Void)?
-    private let singleArgCallback: ((AnyObject?) -> Void)?
+    private let singleArgCallback: ((Any?) -> Void)?
 
     /**
      Constructs a `TargetAction` with a no-argument callback.
@@ -52,10 +52,10 @@ public class TargetAction
 
      - parameter callback: A callback closure that will be executed when the 
      target/action pair represented by the newly-constructed instance is
-     invoked. The `AnyObject?` argument passed to `callback` will be the 
+     invoked. The `Any?` argument passed to `callback` will be the 
      argument sent to `action` when invoked.
     */
-    public init(callback: @escaping (AnyObject?) -> Void)
+    public init(callback: @escaping (Any?) -> Void)
     {
         self.noArgCallback = nil
         self.singleArgCallback = callback
@@ -66,7 +66,7 @@ public class TargetAction
         noArgCallback!()
     }
 
-    @objc private func singleArgAction(_ arg: AnyObject?)
+    @objc private func singleArgAction(_ arg: Any?)
     {
         singleArgCallback!(arg)
     }
