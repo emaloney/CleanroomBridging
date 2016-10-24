@@ -36,6 +36,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationPostingExtension.swift",
+      "line": 13,
+      "symbol": "Notification.post(_:object:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/emaloney/Documents/Code/CleanroomProject/CleanroomBridging/Sources/NotificationWatcher.swift",
       "line": 11,
       "symbol": "NotificationWatcher",
