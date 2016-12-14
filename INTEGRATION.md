@@ -1,4 +1,4 @@
-![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/master/Assets/gilt-tech-logo.png)
+![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/xcode-8.1/Assets/gilt-tech-logo.png)
 
 # CleanroomBridging Integration Notes
 
@@ -8,12 +8,12 @@ CleanroomBridging is designed as a *universal Swift framework* with support for 
 
 Platform|Latest supported OS|Oldest supported OS
 --------|-------------------|-------------------
-iPhone/iPad|iOS 10.0|iOS 8.0
+iPhone/iPad|iOS 10.1|iOS 8.0
 Macintosh|macOS 10.12|macOS 10.10
 Apple TV|tvOS 10.0|tvOS 9.0
-Apple Watch|watchOS 3.0|watchOS 2.0
+Apple Watch|watchOS 3.1|watchOS 2.0
 
-CleanroomBridging uses **Swift 3.0** and **requires Xcode 8** to compile.
+**This is the `xcode-8.1` branch of CleanroomBridging.** It uses **Swift 3.0.1** and **requires Xcode 8.1** to compile.
 
 ### Options for integration
 
@@ -25,7 +25,7 @@ There are two supported options for integration:
 
 ## Carthage Integration
 
-Carthage is a third-party package dependency manager for Apple platforms. As of this writing, the current supported version of Carthage is 0.17.2.
+Carthage is a third-party package dependency manager for Apple platforms. As of this writing, the current supported version of Carthage is 0.18.1.
 
 Installing and using Carthage is beyond the scope of this document. If you do not have Carthage installed but would like to use it, [you can find installation instructions on the project page](https://github.com/Carthage/Carthage#installing-carthage). 
 
@@ -36,12 +36,12 @@ Within to your project’s root directory, Carthage-based projects will store a 
 To integrate CleanroomBridging in your workspace, you would start by adding the following line to the `Cartfile`:
 
 ```
-github "emaloney/CleanroomBridging" ~> 1.0.0
+github "emaloney/CleanroomBridging" ~> 1.1.0
 ```
 
-This specifies that Carthage use the latest version of CleanroomBridging that is API-compatible with 1.0, i.e. any 1.0.*x* version.
+This specifies that Carthage use the latest version of CleanroomBridging that is API-compatible with 1.1, i.e. any 1.1.*x* version.
 
-**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomBridging/releases); there may be a newer version than 1.0 that is no longer API-compatible.
+**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomBridging/releases); there may be a newer version than 1.1 that is no longer API-compatible.
 
 ### 2. Download CleanroomBridging using Carthage
 
@@ -106,7 +106,7 @@ Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to
 
 ### You're done!
 
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/master/Documentation/API/index.html) provided by CleanroomBridging using the statement:
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.1/Documentation/API/index.html) provided by CleanroomBridging using the statement:
 
 ```swift
 import CleanroomBridging
@@ -161,7 +161,7 @@ Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to
 
 ### You're done!
 
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/master/Documentation/API/index.html) provided by CleanroomBridging using the statement:
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.1/Documentation/API/index.html) provided by CleanroomBridging using the statement:
 
 ```swift
 import CleanroomBridging
@@ -169,6 +169,6 @@ import CleanroomBridging
 
 ## Further Reading
 
-Want to learn more about CleanroomBridging? Check out [the README](https://github.com/emaloney/CleanroomBridging/blob/master/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomBridging/master/Documentation/API/index.html).
+Want to learn more about CleanroomBridging? Check out [the README](https://github.com/emaloney/CleanroomBridging/blob/xcode-8.1/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.1/Documentation/API/index.html).
 
 **_Happy coding!_**
