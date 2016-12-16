@@ -1,4 +1,4 @@
-![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/xcode-8.1/Assets/gilt-tech-logo.png)
+![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/xcode-8.2/Assets/gilt-tech-logo.png)
 
 # CleanroomBridging Integration Notes
 
@@ -8,12 +8,12 @@ CleanroomBridging is designed as a *universal Swift framework* with support for 
 
 Platform|Latest supported OS|Oldest supported OS
 --------|-------------------|-------------------
-iPhone/iPad|iOS 10.1|iOS 8.0
+iPhone/iPad|iOS 10.2|iOS 8.0
 Macintosh|macOS 10.12|macOS 10.10
-Apple TV|tvOS 10.0|tvOS 9.0
+Apple TV|tvOS 10.1|tvOS 9.0
 Apple Watch|watchOS 3.1|watchOS 2.0
 
-**This is the `xcode-8.1` branch of CleanroomBridging.** It uses **Swift 3.0.1** and **requires Xcode 8.1** to compile.
+**This is the `xcode-8.2` branch of CleanroomBridging.** It uses **Swift 3.0.2** and **requires Xcode 8.2** to compile.
 
 ### Options for integration
 
@@ -106,7 +106,7 @@ Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to
 
 ### You're done!
 
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.1/Documentation/API/index.html) provided by CleanroomBridging using the statement:
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.2/Documentation/API/index.html) provided by CleanroomBridging using the statement:
 
 ```swift
 import CleanroomBridging
@@ -161,7 +161,7 @@ Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to
 
 ### You're done!
 
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.1/Documentation/API/index.html) provided by CleanroomBridging using the statement:
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.2/Documentation/API/index.html) provided by CleanroomBridging using the statement:
 
 ```swift
 import CleanroomBridging
@@ -169,6 +169,6 @@ import CleanroomBridging
 
 ## Further Reading
 
-Want to learn more about CleanroomBridging? Check out [the README](https://github.com/emaloney/CleanroomBridging/blob/xcode-8.1/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.1/Documentation/API/index.html).
+Want to learn more about CleanroomBridging? Check out [the README](https://github.com/emaloney/CleanroomBridging/blob/xcode-8.2/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomBridging/xcode-8.2/Documentation/API/index.html).
 
 **_Happy coding!_**
