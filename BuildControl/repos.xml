@@ -114,7 +114,7 @@
 			<Var name="Carthage" literal="0.18.1"/>
 			
 			<Var name="current" type="map">
-				<Var name="iOS" literal="10.2"/> 
+				<Var name="iOS" literal="10.1"/> 
 				<Var name="macOS" literal="10.12"/> 
 				<Var name="tvOS" literal="10.1"/> 
 				<Var name="watchOS" literal="3.1"/> 

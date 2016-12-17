@@ -8,7 +8,7 @@ CleanroomBridging is designed as a *universal Swift framework* with support for 
 
 Platform|Latest supported OS|Oldest supported OS
 --------|-------------------|-------------------
-iPhone/iPad|iOS 10.2|iOS 8.0
+iPhone/iPad|iOS 10.1|iOS 8.0
 Macintosh|macOS 10.12|macOS 10.10
 Apple TV|tvOS 10.1|tvOS 9.0
 Apple Watch|watchOS 3.1|watchOS 2.0
