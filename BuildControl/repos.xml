@@ -30,7 +30,7 @@
 		</Var>
 		<Var name="Xcode 8.2" type="map">
 			<Var name="iOS" type="map">
-				<Var name="runDestination" literal="platform=iOS Simulator,OS=10.2,name=iPhone 7"/> 
+				<Var name="runDestination" literal="platform=iOS Simulator,OS=10.1,name=iPhone 7"/> 
 				<Var name="supportsUnitTests" boolean="T"/> 
 			</Var>
 			<Var name="macOS" type="map">
