@@ -35,7 +35,7 @@ The simplest way to integrate CleanroomBridging is with the [Carthage](https://g
 First, add this line to your [`Cartfile`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
 
 ```
-github "emaloney/CleanroomBridging" ~> 1.1.0
+github "emaloney/CleanroomBridging" ~> 1.2.0
 ```
 
 Then, use the `carthage` command to [update your dependencies](https://github.com/Carthage/Carthage#upgrading-frameworks).
