@@ -10,6 +10,10 @@ import XCTest
 import Foundation
 import CleanroomBridging
 
+#if SWIFT_PACKAGE
+import CleanroomBridging_ObjC
+#endif
+
 class AssociatedObjectTests: XCTestCase
 {
     func testAssociatedObject()

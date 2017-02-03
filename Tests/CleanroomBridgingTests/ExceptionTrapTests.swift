@@ -9,6 +9,10 @@
 import XCTest
 import CleanroomBridging
 
+#if SWIFT_PACKAGE
+import CleanroomBridging_ObjC
+#endif
+
 class ExceptionTests: XCTestCase
 {
     func testTry()
