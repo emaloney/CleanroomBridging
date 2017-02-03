@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B03C0741E44321E007E8196 /* AssociatedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03C0711E44321E007E8196 /* AssociatedObjectTests.swift */; };
+		3B03C0751E44321E007E8196 /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03C0721E44321E007E8196 /* ExceptionTrapTests.swift */; };
+		3B03C0761E44321E007E8196 /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03C0731E44321E007E8196 /* TargetActionTests.swift */; };
 		3B8E57221DBE927B0014CCBA /* NotificationPostingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E57211DBE927B0014CCBA /* NotificationPostingExtension.swift */; };
 		3B90590D1DAECB5200B4EEC0 /* CleanroomBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9059031DAECB5200B4EEC0 /* CleanroomBridging.framework */; };
 		3BD302541DB1A00300BEB111 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD3024C1DB1A00300BEB111 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,9 +19,6 @@
 		3BD302581DB1A00300BEB111 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD302501DB1A00300BEB111 /* NotificationWatcher.swift */; };
 		3BD302591DB1A00300BEB111 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD302511DB1A00300BEB111 /* NSTimerExtension.swift */; };
 		3BD3025B1DB1A00300BEB111 /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD302531DB1A00300BEB111 /* TargetAction.swift */; };
-		3BD302601DB1A00E00BEB111 /* AssociatedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3025D1DB1A00E00BEB111 /* AssociatedObjectTests.swift */; };
-		3BD302611DB1A00E00BEB111 /* ExceptionTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3025E1DB1A00E00BEB111 /* ExceptionTrapTests.swift */; };
-		3BD302621DB1A00E00BEB111 /* TargetActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3025F1DB1A00E00BEB111 /* TargetActionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B03C0711E44321E007E8196 /* AssociatedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssociatedObjectTests.swift; path = CleanroomBridgingTests/AssociatedObjectTests.swift; sourceTree = "<group>"; };
+		3B03C0721E44321E007E8196 /* ExceptionTrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExceptionTrapTests.swift; path = CleanroomBridgingTests/ExceptionTrapTests.swift; sourceTree = "<group>"; };
+		3B03C0731E44321E007E8196 /* TargetActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TargetActionTests.swift; path = CleanroomBridgingTests/TargetActionTests.swift; sourceTree = "<group>"; };
 		3B8E57211DBE927B0014CCBA /* NotificationPostingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPostingExtension.swift; sourceTree = "<group>"; };
 		3B9059031DAECB5200B4EEC0 /* CleanroomBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B90590C1DAECB5200B4EEC0 /* CleanroomBridgingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomBridgingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +52,6 @@
 		3BD302501DB1A00300BEB111 /* NotificationWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationWatcher.swift; sourceTree = "<group>"; };
 		3BD302511DB1A00300BEB111 /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
 		3BD302531DB1A00300BEB111 /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
-		3BD3025D1DB1A00E00BEB111 /* AssociatedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatedObjectTests.swift; sourceTree = "<group>"; };
-		3BD3025E1DB1A00E00BEB111 /* ExceptionTrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionTrapTests.swift; sourceTree = "<group>"; };
-		3BD3025F1DB1A00E00BEB111 /* TargetActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +132,9 @@
 		3BD3025C1DB1A00E00BEB111 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3BD3025D1DB1A00E00BEB111 /* AssociatedObjectTests.swift */,
-				3BD3025E1DB1A00E00BEB111 /* ExceptionTrapTests.swift */,
-				3BD3025F1DB1A00E00BEB111 /* TargetActionTests.swift */,
+				3B03C0711E44321E007E8196 /* AssociatedObjectTests.swift */,
+				3B03C0721E44321E007E8196 /* ExceptionTrapTests.swift */,
+				3B03C0731E44321E007E8196 /* TargetActionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -267,9 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BD302611DB1A00E00BEB111 /* ExceptionTrapTests.swift in Sources */,
-				3BD302601DB1A00E00BEB111 /* AssociatedObjectTests.swift in Sources */,
-				3BD302621DB1A00E00BEB111 /* TargetActionTests.swift in Sources */,
+				3B03C0751E44321E007E8196 /* ExceptionTrapTests.swift in Sources */,
+				3B03C0741E44321E007E8196 /* AssociatedObjectTests.swift in Sources */,
+				3B03C0761E44321E007E8196 /* TargetActionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
