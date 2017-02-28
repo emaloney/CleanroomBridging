@@ -1,131 +1,131 @@
 {
   "warnings": [
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NSTimerExtension.swift",
       "line": 15,
       "symbol": "Timer.scheduledTimerWithTimeInterval(_:userInfo:repeats:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NSTimerExtension.swift",
       "line": 29,
       "symbol": "Timer.scheduledTimerWithFireDate(_:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NSTimerExtension.swift",
       "line": 39,
       "symbol": "Timer.scheduledTimerWithFireDate(_:repeatInterval:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NSTimerExtension.swift",
       "line": 49,
       "symbol": "Timer.init(fireDate:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NSTimerExtension.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NSTimerExtension.swift",
       "line": 58,
       "symbol": "Timer.init(fireDate:repeatInterval:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationPostingExtension.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationPostingExtension.swift",
       "line": 13,
       "symbol": "Notification.post(_:object:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 11,
       "symbol": "NotificationWatcher",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 15,
       "symbol": "NotificationWatcher.init(notificationName:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 21,
       "symbol": "NotificationWatcher.init(notificationNames:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 27,
       "symbol": "NotificationWatcher.init(notification:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 32,
       "symbol": "NotificationWatcher.init(notifications:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 39,
       "symbol": "NotificationWatcher.stopWatching()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 44,
       "symbol": "NotificationWatcher.resumeWatching()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 50,
       "symbol": "NotificationObjectWatcher",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 52,
       "symbol": "NotificationObjectWatcher.init(notificationName:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 57,
       "symbol": "NotificationObjectWatcher.init(notificationNames:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 63,
       "symbol": "NotificationObjectWatcher.init(notification:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging/Sources/NotificationWatcher.swift",
+      "file": "/Users/emaloney/Documents/Code/managed/CleanroomBridging/Sources/CleanroomBridging/NotificationWatcher.swift",
       "line": 72,
       "symbol": "NotificationObjectWatcher.init(notifications:object:startWatching:callback:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/emaloney/Documents/Code/client/gilt-ios/Carthage/Checkouts/CleanroomBridging"
+  "source_directory": "/Users/emaloney/Documents/Code/managed/CleanroomBridging"
 }
