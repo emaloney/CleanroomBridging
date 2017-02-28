@@ -14,6 +14,7 @@
 		3B03C0951E4442A0007E8196 /* NotificationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03C08B1E4442A0007E8196 /* NotificationWatcher.swift */; };
 		3B03C0961E4442A0007E8196 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03C08C1E4442A0007E8196 /* NSTimerExtension.swift */; };
 		3B03C0971E4442A0007E8196 /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03C08D1E4442A0007E8196 /* TargetAction.swift */; };
+		3B089B121E654687004C608B /* CleanroomBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B089B111E654687004C608B /* CleanroomBridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B0DEB6A1E44D4D100C27326 /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0DEB681E44D4D100C27326 /* AssociatedObject.m */; };
 		3B0DEB6B1E44D4D100C27326 /* Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0DEB691E44D4D100C27326 /* Exception.m */; };
 		3B0DEB6E1E44D61200C27326 /* AssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0DEB6C1E44D61200C27326 /* AssociatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +40,7 @@
 		3B03C08B1E4442A0007E8196 /* NotificationWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationWatcher.swift; path = CleanroomBridging/NotificationWatcher.swift; sourceTree = "<group>"; };
 		3B03C08C1E4442A0007E8196 /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSTimerExtension.swift; path = CleanroomBridging/NSTimerExtension.swift; sourceTree = "<group>"; };
 		3B03C08D1E4442A0007E8196 /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TargetAction.swift; path = CleanroomBridging/TargetAction.swift; sourceTree = "<group>"; };
+		3B089B111E654687004C608B /* CleanroomBridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanroomBridging.h; sourceTree = "<group>"; };
 		3B0DEB681E44D4D100C27326 /* AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssociatedObject.m; path = Sources/CleanroomBridging_ObjC/AssociatedObject.m; sourceTree = SOURCE_ROOT; };
 		3B0DEB691E44D4D100C27326 /* Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exception.m; path = Sources/CleanroomBridging_ObjC/Exception.m; sourceTree = SOURCE_ROOT; };
 		3B0DEB6C1E44D61200C27326 /* AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssociatedObject.h; path = Sources/CleanroomBridging_ObjC/include/AssociatedObject.h; sourceTree = SOURCE_ROOT; };
@@ -137,6 +139,7 @@
 		3BD3024B1DB1A00300BEB111 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3B089B111E654687004C608B /* CleanroomBridging.h */,
 				3B03C08A1E4442A0007E8196 /* NotificationPostingExtension.swift */,
 				3B03C08B1E4442A0007E8196 /* NotificationWatcher.swift */,
 				3B03C08C1E4442A0007E8196 /* NSTimerExtension.swift */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0DEB6F1E44D61200C27326 /* Exception.h in Headers */,
+				3B089B121E654687004C608B /* CleanroomBridging.h in Headers */,
 				3B0DEB6E1E44D61200C27326 /* AssociatedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
