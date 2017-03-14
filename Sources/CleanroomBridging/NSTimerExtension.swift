@@ -20,9 +20,7 @@ extension Timer
         }
 
         let timer = Timer(timeInterval: interval, target: ta, selector: ta.action, userInfo: userInfo, repeats: repeats)
-
-        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
-
+        timer.schedule()
         return timer
     }
 
@@ -30,9 +28,7 @@ extension Timer
         -> Timer
     {
         let timer = Timer(fireDate: fireDate, callback: callback)
-
-        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
-
+        timer.schedule()
         return timer
     }
 
@@ -40,9 +36,7 @@ extension Timer
         -> Timer
     {
         let timer = Timer(fireDate: fireDate, repeatInterval: repeatInterval, callback: callback)
-
-        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
-
+        timer.schedule()
         return timer
     }
 
@@ -62,5 +56,10 @@ extension Timer
         }
 
         self.init(fireAt: fireDate, interval: repeatInterval, target: ta, selector: ta.action, userInfo: nil, repeats: true)
+    }
+
+    public func schedule()
+    {
+        RunLoop.main.add(self, forMode: RunLoopMode.commonModes)
     }
 }
