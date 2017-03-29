@@ -44,7 +44,7 @@ class TargetActionTests: XCTestCase
         let userInfo = "(info for the user)"
 
         let targetAction = TargetAction() { (argument: Any?) -> Void in
-            print("Invoked with: \(argument)")
+            print("Invoked with: \(String(describing: argument))")
 
             let timer = argument as? Timer
             XCTAssertTrue(timer != nil)

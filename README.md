@@ -10,7 +10,7 @@ CleanroomBridging is part of [the Cleanroom Project](https://github.com/gilt/Cle
 
 ### Swift compatibility
 
-This is the `master` branch. It uses **Swift 3.0.2** and **requires Xcode 8.2** to compile.
+This is the `master` branch. It uses **Swift 3.1** and **requires Xcode 8.3** to compile.
 
 
 #### Current status
@@ -36,7 +36,7 @@ The simplest way to integrate CleanroomBridging is with the [Carthage](https://g
 First, add this line to your [`Cartfile`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
 
 ```
-github "emaloney/CleanroomBridging" ~> 1.3.0
+github "emaloney/CleanroomBridging" ~> 1.4.0
 ```
 
 Then, use the `carthage` command to [update your dependencies](https://github.com/Carthage/Carthage#upgrading-frameworks).
