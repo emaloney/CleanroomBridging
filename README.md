@@ -43,7 +43,7 @@ Then, use the `carthage` command to [update your dependencies](https://github.co
 
 Finally, you’ll need to [integrate CleanroomBridging into your project](https://github.com/emaloney/CleanroomBridging/blob/master/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/CleanroomBridging/master/Documentation/API/index.html) it provides.
 
-Once successfully integrated, just add the following `import` statement to any Swift file where you want to use CleanroomBridging:
+Once successfully integrated, just add the following statement to any Swift file where you want to use CleanroomBridging:
 
 ```swift
 import CleanroomBridging
@@ -96,7 +96,6 @@ let timer = NSTimer.scheduledTimerWithTimeInterval(1.0,
 The example above sets up a timer that will result in the current time being printed to the console every second.
 
 
-
 ### API documentation
 
 For detailed information on using CleanroomBridging, [API documentation](https://rawgit.com/emaloney/CleanroomBridging/master/Documentation/API/index.html) is available.
@@ -122,5 +121,4 @@ If you’d like to contribute to this or any other Cleanroom Project repo, pleas
 
 ### Acknowledgements
 
-[API documentation for CleanroomBridging](https://rawgit.com/emaloney/CleanroomBridging/master/Documentation/API/index.html) is generated using [Realm](http://realm.io)’s [jazzy](https://github.com/realm/jazzy/) project, maintained by [JP Simard](https://github.com/jpsim) and [Samuel E. Giddins](https://github.com/segiddins).
-
+API documentation is generated using [Realm](http://realm.io)’s [jazzy](https://github.com/realm/jazzy/) project, maintained by [JP Simard](https://github.com/jpsim) and [Samuel E. Giddins](https://github.com/segiddins).
