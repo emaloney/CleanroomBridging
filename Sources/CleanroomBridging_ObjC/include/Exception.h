@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^ExceptionTryBlock)();
+typedef void (^ExceptionTryBlock)(void);
 typedef void (^ExceptionCatchBlock)(NSException* __nonnull ex);
-typedef void (^ExceptionFinallyBlock)();
+typedef void (^ExceptionFinallyBlock)(void);
 
 @interface Exception : NSObject
 
