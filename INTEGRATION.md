@@ -14,7 +14,7 @@ Macintosh|macOS 10.13|macOS 10.11
 Apple TV|tvOS 11.0|tvOS 9.0
 Apple Watch|watchOS 4.0|watchOS 2.0
 
-**This is the `swift-4` branch of CleanroomBridging.** It uses **Swift 4.0** and **requires Xcode 9.0 beta** to compile.
+CleanroomBridging uses **Swift 4.0** and **requires Xcode 9.0** to compile.
 
 ### Options for integration
 
@@ -24,7 +24,7 @@ There are two supported options for integration:
 
 - **[Manual integration](#manual-integration)** involves embedding the `CleanroomBridging.xcodeproj` file within your project’s Xcode workspace.
 
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/swift-4/Documentation/API/index.html) provided by CleanroomBridging in any Swift file using the statement:
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomBridging/master/Documentation/API/index.html) provided by CleanroomBridging in any Swift file using the statement:
 
 ```swift
 import CleanroomBridging
@@ -33,7 +33,7 @@ import CleanroomBridging
 
 ## Carthage Integration
 
-Carthage is a third-party package dependency manager for Apple platforms. As of this writing, the current supported version of Carthage is 0.24.0.
+Carthage is a third-party package dependency manager for Apple platforms. As of this writing, the current supported version of Carthage is 0.25.0.
 
 Installing and using Carthage is beyond the scope of this document. If you do not have Carthage installed but would like to use it, [you can find installation instructions on the project page](https://github.com/Carthage/Carthage#installing-carthage). 
 
@@ -163,6 +163,6 @@ Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to
 
 ## Further Reading
 
-Want to learn more about CleanroomBridging? Check out [the README](https://github.com/emaloney/CleanroomBridging/blob/swift-4/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomBridging/swift-4/Documentation/API/index.html).
+Want to learn more about CleanroomBridging? Check out [the README](https://github.com/emaloney/CleanroomBridging/blob/master/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomBridging/master/Documentation/API/index.html).
 
 **_Happy coding!_**
